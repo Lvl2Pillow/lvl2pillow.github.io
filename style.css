@@ -1,10 +1,12 @@
 body {
-	margin:50px 0px; padding:0px;
+	/*margin:50px 0px; padding:0px;*/
 	text-align:center;
+
+	background-color: #202020;
 }
 	
 .content {
-	width:500px;
+	width:800px;
 	margin:0px auto;
 	text-align:left;
 	padding:15px;
