@@ -5,8 +5,8 @@ body {
 }
 	
 .content {
-	background-color:#404040;
-	border:1px dashed #333;
+	background-color:#C0C0C0;
+	border:1px dashed #C0C0C0;
 	margin:0px auto;
 	padding:15px;
 	text-align:left;
@@ -14,7 +14,8 @@ body {
 }
 
 .banner {
-	background-color: #FF0000;
+	background-color: #FF9933;
 	margin-left: 0%;
 	margin-right: 0%
+	top: 0px;
 }
