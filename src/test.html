@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<body>
-		<p>just another page...</p>
-	</body>
+	<head>
+		<title>Test</title>
+		<link rel="stylesheet" type="text/css" href="../lib/style/style.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<script>
+		$(document).ready(function(){
+		  $("p").click(function(){
+		    $(this).hide();
+		  });
+		});
+		</script>
+
+		<script>
+				$(document).scroll(function() {
+				    t = (100 - $(this).scrollTop())/100;
+				    if(t<0)t=0;
+				    $('.skyB').css({opacity: t})
+				})
+
+		</script>
+</head>
+<body>
+	<div class="skyA"></div>
+	<div class="skyB"></div>
+
+
+	<p>If you click on me, I will disappear.</p>
+	<p>Click me away!</p>
+	<p>Click me too!</p>
+
+	
+		
+
+</body>
 </html>
