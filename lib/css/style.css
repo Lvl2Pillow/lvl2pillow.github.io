@@ -1,0 +1,26 @@
+body {
+	background-color: #202020;
+	margin: 0px;
+	padding: 0px;
+}
+	
+.content {
+	background-color: #202020;
+/*	border: 1px dashed #C0C0C0;
+	border-radius: 5px;*/
+	color: #E6E6E6;
+	margin: auto;
+	min-height: 900px;
+	padding: 200px 15px 15px 20px;
+	text-align: left;
+	width: 800px;
+}
+
+.banner {
+	background-color: #FF9933;
+	height: 60px;
+	margin: 0px;
+	padding: 0px 15px;
+	position: fixed;
+	width: 100%;
+}

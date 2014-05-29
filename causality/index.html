@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Causality</title>
+		<link rel="stylesheet" href="lib/css/style.css"/>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<link rel="stylesheet" href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"/>
+		<script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="content">
+			<div class="header">Example Text File Reader</div>
+
+			<br/>
+			<div>
+				Select a text file: 
+				<input type="file" id="fileInput">
+			</div>
+
+			<div id="fileDisplayArea" class="code"></div>
+
+			<br/>
+			<br/>
+
+			<div class="test">
+
+				<p> hello world </p>
+				<p> padding </p>
+
+			</div>
+
+
+
+
+		</div>
+
+
+
+
+		<script src="lib/js/readText.js"></script>
+
+		<script>
+			(function($){
+				$(window).load(function(){
+					$(".content").mCustomScrollbar();
+				});
+			})(jQuery);
+		</script>
+	</body>
+</html>
