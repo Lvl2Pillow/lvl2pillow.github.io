@@ -1,13 +1,15 @@
 body {
 	background-color: #202020;
+	font-family: "Book Antiqua", Times, serif;
+	font-size: 12px;
 	margin: 0px;
 	padding: 0px;
 }
-	
-.header {
+
+input[type="file"] {
 	font-family: "Book Antiqua", Times, serif;
-	font-size: 24px;
-	font-style: normal;
+	font-size: 10px;
+	line-height: 12px;
 }
 
 .content {
@@ -15,11 +17,19 @@ body {
 	border: 1px dashed #C0C0C0;
 	border-radius: 5px;
 	color: #E6E6E6;
+	font-family: "Book Antiqua", Times, serif;
+	font-size: 12px;
 	margin: 20px auto;
 	min-height: 900px;
 	padding: 24px 20px 20px 24px;
 	text-align: left;
 	width: 800px;
+}
+
+.header {
+	font-family: "Book Antiqua", Times, serif;
+	font-size: 24px;
+	font-style: normal;
 }
 
 .code {
@@ -28,13 +38,11 @@ body {
 	font-family: "Courier New", Courier, monospace;
 	font-size: 12px;
 	font-style: normal;
-	height: 100px;
+	height: 200px;
 	margin: 0px auto;
 	overflow: auto;
 	padding: 2px 5px 5px 2px;
 	width: 750px;
-
-
 }
 
 .test {
@@ -47,3 +55,4 @@ body {
 
 
 }
+

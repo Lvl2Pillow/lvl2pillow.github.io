@@ -1,0 +1,10 @@
+i could write a blog about my experiences learning c++, i had learnt c ages ago but forgot most of the syntax, and i had tinkere with c++ a few times, but never really delve deep into it.
+
+this will be a blog about my experiences in learning it, how i apply other knowledge from other languages, ooprogramming, data structures, complexity, and other CS knowledge to throw onto the table.
+
+well, let's get started!
+first, we'll run through the hardware and software platforms i will be using. c and c++ are notoriously known for their low level-ness, and because of that, also how compilers can really influence the code. that also means the hardware, OS, and libraries you want to use. maybe not something you need to consider so early on, but definitely something to watch out.
+
+http://www.cplusplus.com/doc/tutorial/introduction/
+
+30/5

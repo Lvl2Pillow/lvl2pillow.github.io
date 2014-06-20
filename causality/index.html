@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8"/>
 		<title>Causality</title>
+		<!-- CSS styles -->
 		<link rel="stylesheet" href="lib/css/style.css"/>
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
 		<link rel="stylesheet" href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"/>
+		<!-- JQuery -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!-- Custom Scrollbar -->
 		<script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+		<!--Javascript performance and memory (dependent on client-side hardware).-->
+		<script src="lib/js/performanceTest.js"></script>
 	</head>
-	
 	<body>
 		<div class="content">
-			<div class="header">Example Text File Reader</div>
-
+			<div class="header">Text File Reader</div>
 			<br/>
 			<div>
-				Select a text file: 
-				<input type="file" id="fileInput">
+				Select a text file:
+				<input type="file" id="fileInput"/>
 			</div>
-
-			<div id="fileDisplayArea" class="code"></div>
+			<br/>
+			<div id="fileDisplay" class="code"></div>
 
 			<br/>
 			<br/>
 
-			<div class="test">
+			<div class="header">Javascript Performance and Memory</div><br/>
+			<div>
+				Set a dimensionality:
+				<input type="number" id="dimInput"/>
+				
 
-				<p> hello world </p>
-				<p> padding </p>
+
+				<input type="button" id="startButton" value="Start"/>
 
 			</div>
+			<br/>
+			<div id="result" class="code"></div>
+			
 
 
+
+			
 
 
 		</div>
 
 
 
+		<!--Javascript file read.-->
+		<script src="lib/js/readTest.js"></script>
+		
+		<!--Javascript graph demo.-->
+		<!--<script src="lib/js/graphTest.js"></script>-->
 
-		<script src="lib/js/readText.js"></script>
 
-		<script>
-			(function($){
-				$(window).load(function(){
-					$(".content").mCustomScrollbar();
-				});
-			})(jQuery);
-		</script>
+		<script>$("#startButton").on("click", doPerformanceTest; </script>
+
+
+	<!-- 	function optimize() {
+		    $('#status').text('working...');
+		    window.setTimeout(function() {
+		        // calculate for 2 seconds
+		        $('#status').text('done!');
+		    }, 0);
+		} -->
+
+
 	</body>
 </html>
