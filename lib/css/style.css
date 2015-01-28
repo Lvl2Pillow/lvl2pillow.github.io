@@ -1,26 +1,136 @@
-body {
-	background-color: #202020;
-	margin: 0px;
-	padding: 0px;
-}
-	
-.content {
-	background-color: #202020;
-/*	border: 1px dashed #C0C0C0;
-	border-radius: 5px;*/
-	color: #E6E6E6;
-	margin: auto;
-	min-height: 900px;
-	padding: 200px 15px 15px 20px;
-	text-align: left;
-	width: 800px;
+
+/*******************************************************************************
+Custom CSS
+@author: Lvl2Pillow 2014
+*******************************************************************************/
+
+/*----------------------------------------------------------------------------
+General
+----------------------------------------------------------------------------*/
+html, body, div, span {
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
 }
 
-.banner {
-	background-color: #FF9933;
-	height: 60px;
-	margin: 0px;
-	padding: 0px 15px;
-	position: fixed;
-	width: 100%;
+html, body {
+	min-height: 100%;
+	min-width: 320px;
+}
+
+body {
+	/* Background */
+	background: url(../img/mosaic.png) repeat;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 16px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+.container {
+	max-width: 960px;
+}
+
+.padding1 {
+	height: 2px;
+}
+
+.padding2 {
+	height: 4px;
+}
+
+.padding3 {
+	height: 8px;
+}
+
+.padding4 {
+	height: 16px;
+}
+
+.hdivider {
+	border-bottom: 1px solid #ccc;
+}
+
+.hcenter {
+	margin: 0 auto;
+}
+
+.vcenter {
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*----------------------------------------------------------------------------
+Header/ Navbar
+----------------------------------------------------------------------------*/
+
+.navbar, navbar-default {
+	border-radius: 0;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.navbar-brand {
+	padding: 0 0;
+}
+
+#logo {
+	height: 48px;
+}
+
+/*----------------------------Mobile Version--------------------------------*/
+
+@media all and (max-width: 767px) {
+	.navbar, .navbar-default {
+		font-size: 16px;
+	}
+}
+
+/*----------------------------------------------------------------------------
+Main Content
+----------------------------------------------------------------------------*/
+
+.tile {
+	background-color: #f8f8f8;
+	float: left;
+	margin:0 4px 8px 4px;
+	overflow: hidden;
+	position: relative;
+}
+
+.tile:hover {
+	border: none;
+	margin: 0 4px 8px 4px;
+	box-shadow:0 0 4px 0 #000;
+	-moz-box-shadow:0 0 4px 0 #000;
+	-webkit-box-shadow:0 0 4px 0 #000;
+}
+
+.large {
+	width: 308px;
+	height: 308px;
+}
+.medium {
+	width: 308px;
+	height: 150px;
+}
+.small {
+	width: 150px;
+	height: 150px;
+}
+
+/*----------------------------------------------------------------------------
+Footer
+----------------------------------------------------------------------------*/
+
+#heart {
+	height: 16px;
 }
