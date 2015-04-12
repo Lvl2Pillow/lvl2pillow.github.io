@@ -5,126 +5,404 @@ Custom CSS
 *******************************************************************************/
 
 /*----------------------------------------------------------------------------
+Reset
+----------------------------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+*,
+*:after, 
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+object {
+	pointer-events: none;
+}
+
+/*----------------------------------------------------------------------------
 General
 ----------------------------------------------------------------------------*/
-html, body, div, span {
-	border: 0;
-	margin: 0;
-	outline: 0;
-	padding: 0;
-}
 
-html, body {
-	min-height: 100%;
-	min-width: 320px;
-}
-
+html, 
 body {
-	/* Background */
-	background: url(../img/mosaic.png) repeat;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	min-width: 320px;
+	overflow: hidden;
+}
+
+.scrollable {
+	margin-top: -48px;
+	padding-top: 48px;
+	height: 100%;
+	overflow: auto;
+}
+
+.unscrollable {
+	margin-bottom: -80px;
+	min-height: 100%;
+}
+
+.footer {
+	height: 80px;
 }
 
 .container {
-	max-width: 960px;
+	margin: 0 auto;
+	max-width: 768px;
 }
 
-.padding1 {
-	height: 2px;
+.navbar .container {
+	padding: 0 8px;
 }
 
-.padding2 {
-	height: 4px;
+body .container,
+footer .container {
+	padding: 0 16px;
 }
 
-.padding3 {
-	height: 8px;
+.content {
+	margin-top: 64px;
 }
 
-.padding4 {
+.h16 {
 	height: 16px;
 }
 
-.hdivider {
-	border-bottom: 1px solid #ccc;
+.h32 {
+	height: 32px;
 }
 
-.hcenter {
-	margin: 0 auto;
+.h64 {
+	height: 64px;
 }
 
-.vcenter {
-	display: inline-block;
-	float: none;
-	vertical-align: middle;
+.divider {
+	height: 1px;
+	width: 100%;
+	background-image: -webkit-linear-gradient(left, #ffffff, #e7e7e7, #ffffff);
+	background-image: -moz-linear-gradient(left, #ffffff, #e7e7e7, #ffffff);
+	background-image: -ms-linear-gradient(left, #ffffff, #e7e7e7, #ffffff);
+	background-image: -o-linear-gradient(left, #ffffff, #e7e7e7, #ffffff);
+}
+
+.invisible {
+	opacity: 0;
+}
+
+.visible {
+	opacity: 1;
+}
+
+.no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+*::-webkit-scrollbar {
+	width: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #808080;
+}
+
+
+/*----------------------------------------------------------------------------
+Text
+----------------------------------------------------------------------------*/
+
+html {
+	color: #000000;
+	font: 200 16px/28px Helvetica, sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	color: #808080;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: 200;
 }
 
 .text-center {
 	text-align: center;
 }
 
+.vcenter {
+	line-height: normal;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.navbar-links a, 
+.social-icons a {
+	color: #000000;
+}
+
+.navbar-links a:hover, 
+.social-icons a:hover {
+	color: #808080;
+}
+
+.navbar-links .active a, 
+.navbar-links .active a:hover{
+	color: #808080;
+}
+
+.tile, 
+.tile a {
+	color: #000000;
+}
+
+a .blog-panel {
+	color: #000000;
+}
+
 /*----------------------------------------------------------------------------
 Header/ Navbar
 ----------------------------------------------------------------------------*/
 
-.navbar, navbar-default {
-	border-radius: 0;
-	font-size: 20px;
-	font-weight: 400;
-}
-
-.navbar-brand {
-	padding: 0 0;
-}
-
-#logo {
+header {
 	height: 48px;
 }
 
-/*----------------------------Mobile Version--------------------------------*/
+.navbar {
+	height: 48px;
+	width: 100%;
+	position: fixed;
+	background-color: #f8f8f8;
+	border-bottom: solid 1px #e7e7e7;
+}
 
-@media all and (max-width: 767px) {
-	.navbar, .navbar-default {
-		font-size: 16px;
-	}
+#logo-link {
+	height: 48px;
+	display: inline-block;
+}
+
+.navbar-logo {
+	height: 48px;
+}
+
+.navbar-links {
+	display: inline-block;
+	float: right;
+	text-align: center;
+}
+
+.navbar-links li {
+	list-style: none;
+	display: inline-block;
+}
+
+.navbar-links li a i {
+	margin: 0 6px;
+	width: 36px;
+	line-height: 48px;
 }
 
 /*----------------------------------------------------------------------------
-Main Content
+About
 ----------------------------------------------------------------------------*/
 
+.typed-string {
+	display: inline;
+}
+
+.typed-cursor {
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+    opacity: 1;
+    -webkit-animation: blink 0.6s infinite;
+    -moz-animation: blink 0.6s infinite;
+    animation: blink 0.6s infinite;
+}
+
+.typed-cursor-hidden {
+    opacity: 0;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.tile-container {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
 .tile {
-	background-color: #f8f8f8;
-	float: left;
-	margin:0 4px 8px 4px;
-	overflow: hidden;
-	position: relative;
+	color: #000000;
+
+	width: 256px;
+	min-height: 160px;
+	margin: 8px;
+	
+	border: 1px solid #e7e7e7;
+	border-radius: 4px;
+	background-color: darkgrey;
+
+	border: 1px solid #e7e7e7;
+	border-radius: 4px;
+
+	display: inline-block;
+
+	-webkit-transition: all 2s ease-out;
+	-moz-transition: all 2s ease-out;
+	-ms-transition: all 2s ease-out;
+	-o-transition: all 2s ease-out;
+	transition: all 2s ease-out;
+
+	text-align: left;
 }
 
-.tile:hover {
-	border: none;
-	margin: 0 4px 8px 4px;
-	box-shadow:0 0 4px 0 #000;
-	-moz-box-shadow:0 0 4px 0 #000;
-	-webkit-box-shadow:0 0 4px 0 #000;
+
+
+.tile-overlay {
+	margin: 0;
+	padding: 6px 12px;
+	min-height: 160px;
+	width: 100%;
+	border-radius: 4px;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
 }
 
-.large {
-	width: 308px;
-	height: 308px;
+.tile-overlay:hover {
+	background-color: rgba(255, 255, 255, 0.5);
 }
-.medium {
-	width: 308px;
-	height: 150px;
+#test {
+	height: 300px;
 }
-.small {
-	width: 150px;
-	height: 150px;
+
+.tile h4 {
+	display: inline-block;
+}
+
+.tile-content {
+	width: 100%;
+	min-height: 160px;
+}
+
+/*----------------------------------------------------------------------------
+Blog
+----------------------------------------------------------------------------*/
+
+.blog-panel {
+	margin: 16px auto;
+	min-height: 160px;
+	width: 96%;
+	border: 1px solid #e7e7e7;
+	border-radius: 4px;
+	-webkit-transition: all 2s ease-out;
+	-moz-transition: all 2s ease-out;
+	-ms-transition: all 2s ease-out;
+	-o-transition: all 2s ease-out;
+	transition: all 2s ease-out;
+}
+
+.blog-panel-overlay {
+	margin: 0;
+	padding: 12px;
+	min-height: 160px;
+	width: 100%;
+	border-radius: 4px;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+
+.blog-panel-overlay:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.blog-panel-header {
+	width: 100%;
+}
+
+.blog-panel h4 {
+	display: inline-block;
+}
+
+.blog-date {
+	margin-top: 2px;
+	font-weight: 400;
+	text-align: right;
+	display: inline-block;
+	float: right;
+}
+
+.blog-description {
+	clear: both;
+}
+
+#haskell {
+	background: url("../img/haskell.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*----------------------------------------------------------------------------
+Contact
+----------------------------------------------------------------------------*/
+
+.social-icons {
+	font-size: 24px;
+	text-align: center;
+}
+
+.social-icon {
+	width: 128px;
 }
 
 /*----------------------------------------------------------------------------

@@ -1,6 +1,8 @@
 lvl2pillow.github.io
 ====================
 
-- My Website
-- Portfolio
+My website.
+
+- About
 - Blog
+- Contact
