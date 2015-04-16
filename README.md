@@ -1,4 +1,4 @@
-*lvl2pillow.github.io*
+[*lvl2pillow.github.io*](http://lvl2pillow.github.io "lvl2pillow")
 ====================
 
 My website and blog.
@@ -7,26 +7,26 @@ My website and blog.
 - Blog (coming soon)
 - Contact
 
-###Update:
+####Update:
 
 - New design and complete rework.
 - Efficient JS and CSS. Minified resources.
 - Responsive design.
 - Compatible with more browsers.
 
-###Requires:
+####Requires:
 
 - JavaScript;
 - Something better than dial-up, maybe...
 
-###Supports:
+####Supports:
 
-- Browsers:
+- ###Browsers:
 	- Chrome
 	- Safari
 	- Firefox
 	- Opera (untested)
 	- IE 10+ (limited support for IE 9)
-- Devices:
+- ###Devices:
 	- Desktop
 	- Mobile (limited support, for now...)
