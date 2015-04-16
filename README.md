@@ -21,12 +21,12 @@ My website and blog.
 
 ####Supports:
 
-- ###Browsers:
+- **Browsers**:
 	- Chrome
 	- Safari
 	- Firefox
 	- Opera (untested)
 	- IE 10+ (limited support for IE 9)
-- ###Devices:
+- **Devices**:
 	- Desktop
 	- Mobile (limited support, for now...)
