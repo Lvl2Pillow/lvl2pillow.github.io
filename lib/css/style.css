@@ -87,6 +87,11 @@ footer .container,
 
 .invisible {
 	opacity: 0;
+	-webkit-transition: opacity 2s ease-out;
+	-moz-transition: opacity 2s ease-out;
+	-ms-transition: opacity 2s ease-out;
+	-o-transition: opacity 2s ease-out;
+	transition: opacity 2s ease-out;
 }
 
 .visible {
@@ -129,11 +134,11 @@ html {
 a {
 	color: #808080;
 	text-decoration: none;
-	-webkit-transition: all 0.2s ease-out;
-	-moz-transition: all 0.2s ease-out;
-	-ms-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
+	-webkit-transition: color 0.2s ease-out;
+	-moz-transition: color 0.2s ease-out;
+	-ms-transition: color 0.2s ease-out;
+	-o-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
 }
 
 a:hover {
@@ -328,71 +333,23 @@ About
 	text-align: center;
 }
 
-.tile-overlay {
-	margin: 0;
-	padding: 6px 12px;
-	min-height: 160px;
-	/*width: 100%;*/
-	border-radius: 4px;
-	-webkit-transition: all 0.4s ease-out;
-	-moz-transition: all 0.4s ease-out;
-	-ms-transition: all 0.4s ease-out;
-	-o-transition: all 0.4s ease-out;
-	transition: all 0.4s ease-out;
-}
-
-.tile-overlay:hover {
-	background-color: rgba(255, 255, 255, 0.5);
-}
-
-.tile h4 {
-	display: inline-block;
-}
-
-
-.brick {
-	margin: 6px 0;
-	color: #000000;
-
-	width: 256px;
-	min-height: 160px;
-	margin: 8px;
-	
-	border: 1px solid #e8e8e8;
-	border-radius: 4px;
-	background-color: darkgrey;
-
-	border: 1px solid #e8e8e8;
-	border-radius: 4px;
-
-	display: inline-block;
-
-	z-index: -1;
-	/*
-	-webkit-transition: all 2s ease-out;
-	-moz-transition: all 2s ease-out;
-	-ms-transition: all 2s ease-out;
-	-o-transition: all 2s ease-out;
-	transition: all 2s ease-out;
-this causes the tiles to  shake
-	*/
-}
 
 /*----------------------------------------------------------------------------
 Blog
 ----------------------------------------------------------------------------*/
 
 .panel {
-	margin: 16px auto;
-	min-height: 160px;
-	width: 96%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	width: 100%;
 	border: 1px solid #e8e8e8;
 	border-radius: 4px;
-	-webkit-transition: all 2s ease-out;
-	-moz-transition: all 2s ease-out;
-	-ms-transition: all 2s ease-out;
-	-o-transition: all 2s ease-out;
-	transition: all 2s ease-out;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .panel-overlay {
@@ -401,11 +358,11 @@ Blog
 	min-height: 160px;
 	width: 100%;
 	border-radius: 4px;
-	-webkit-transition: all 0.4s ease-out;
-	-moz-transition: all 0.4s ease-out;
-	-ms-transition: all 0.4s ease-out;
-	-o-transition: all 0.4s ease-out;
-	transition: all 0.4s ease-out;
+	-webkit-transition: background-color 0.4s ease-out;
+	-moz-transition: background-color 0.4s ease-out;
+	-ms-transition: background-color 0.4s ease-out;
+	-o-transition: background-color 0.4s ease-out;
+	transition: background-color 0.4s ease-out;
 }
 
 .panel-overlay:hover {
@@ -439,6 +396,32 @@ Blog
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+
+
+
+.brick {
+
+
+	width: 256px;
+	min-height: 160px;
+
+	margin: 4px;
+
+	color: #000000;
+
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+	background-color: darkgrey;
+
+
+	display: inline-block;
+
+	z-index: -1;
+
+}
+
+
 
 /*----------------------------------------------------------------------------
 Contact
