@@ -6,42 +6,42 @@
 		<meta name="description" content="My website and blog." />
 		<meta name="author" content="Henry Su (Lvl2Pillow)" />
 		<!-- title -->
-		<title>Henry Su | Blog</title>
+		<title>Henry Su | Contact</title>
 		<!-- favicon -->
 		<link href="lib/img/zz.png" rel="shortcut icon" type="image/png" />
 		<!-- CSS -->
-		<link rel="stylesheet" href="lib/jquery-ui-1.11.4/jquery-ui.min.css" />
 		<link rel="stylesheet" href="lib/font-awesome-4.3.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="lib/css/style.css" />
 		<!-- JS -->
 		<script src="lib/js/jquery-1.11.2.min.js"></script>
-		<script src="lib/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
 	</head>
 
 	<body>
-		<header>
-			<nav class="navbar no-select">
-				<div class="container">
-					<!-- brand logo -->
-					<a id="logo-link" href="about.html" title="ZZ">
-						<object class="navbar-logo" data="lib/img/zz.svg" type="image/svg+xml">
-							<img src="lib/img/zz.png" />
-						</object>
-					</a>
-					<!-- nav links -->
-					<div id="navbar-links" class="navbar-links">
-						<ul>
-							<li><a href="about.html" title="About"><i class="fa fa-info fa-2x"></i></a></li>
-							<li class="active" ><a href="blogs.html" title="Blog"><i class="fa fa-pencil fa-2x"></i></a></li>
-							<li title="Contact"><a href="contact.html"><i class="fa fa-phone fa-2x"></i></a></li>
-						</ul>
+		<div class="fill-height">
+			<!-- Header -->
+			<header>
+				<nav class="navbar no-select">
+					<div class="container">
+						<!-- brand logo -->
+						<a class="navbar-logo" href="about.html" title="ZZ">
+							<object id="zz" data="lib/img/zz.svg" type="image/svg+xml">
+								<img src="lib/img/zz.png" />
+							</object>
+						</a>
+						<!-- nav links -->
+						<div class="navbar-links">
+							<a class="navbar-arrow" href="#"><i class="fa fa-bars fa-2x"></i></a>
+							<ul class="dropdown">
+								<li><a href="about.html" title="About"><h3>About</h3></a></li>
+								<li class="active"><a href="blogs.html" title="Blog"><h3>Blog</h3></i></a></li>
+								<li><a href="contact.html" title="Contact"><h3>Contact</h3></a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</nav>
-		</header>
+				</nav>
+			</header>
 
 		<!-- Main content -->
-		<div class="scrollable">
 			<div class="content">
 				<div class="container">
 					<h2>Blog</h2>
@@ -51,8 +51,8 @@
 					<div class="h64"></div>
 					<!-- Blogs -->
 					<a href="#">
-						<div id="haskell" class="blog-panel invisible">
-							<div class="blog-panel-overlay">
+						<div id="haskell" class="panel invisible">
+							<div class="panel-overlay">
 								<div id="blog-header">
 									<h4>
 										Learning Haskell
@@ -69,8 +69,8 @@
 					</a>
 
 					<a href="#">
-						<div id="" class="blog-panel invisible">
-							<div class="blog-panel-overlay">
+						<div id="" class="panel invisible">
+							<div class="panel-overlay">
 								<div id="blog-header">
 									<h4>
 										A very loooonnnngggg title
@@ -87,11 +87,11 @@
 					</a>
 
 					<a href="#">
-						<div id="" class="blog-panel invisible">
-							<div class="blog-panel-overlay">
+						<div id="" class="panel invisible">
+							<div class="panel-overlay">
 								<div id="blog-header">
 									<h4>
-										Coming soon...
+										Google Code Jam
 									</h4>
 									<span class="blog-date">
 										00.00.00
@@ -105,11 +105,11 @@
 					</a>
 
 					<a href="#">
-						<div id="" class="blog-panel invisible">
-							<div class="blog-panel-overlay">
+						<div id="" class="panel invisible">
+							<div class="panel-overlay">
 								<div id="blog-header">
 									<h4>
-										Coming soon...
+										Tutoring INFO1003
 									</h4>
 									<span class="blog-date">
 										00.00.00
@@ -123,11 +123,11 @@
 					</a>
 
 					<a href="#">
-						<div id="" class="blog-panel invisible">
-							<div class="blog-panel-overlay">
+						<div id="" class="panel invisible">
+							<div class="panel-overlay">
 								<div id="blog-header">
 									<h4>
-										Coming soon...
+										Ruby on Rails
 									</h4>
 									<span class="blog-date">
 										00.00.00
@@ -135,14 +135,15 @@
 								</div>
 								<p id="blog-description">
 									Coming soon...
+									There's more to regex than meets the eye
 								</p>
 							</div>
 						</div>
 					</a>
 
 					<a href="#">
-						<div id="" class="blog-panel invisible">
-							<div class="blog-panel-overlay">
+						<div id="" class="panel invisible">
+							<div class="panel-overlay">
 								<div id="blog-header">
 									<h4>
 										Coming soon...
@@ -153,6 +154,7 @@
 								</div>
 								<p id="blog-description">
 									Coming soon...
+									http://philipwalton.com/articles/what-no-one-told-you-about-z-index/
 								</p>
 							</div>
 						</div>
@@ -178,9 +180,9 @@
 					</div>
 				</div>
 			</footer>
-		</div> <!-- scrollable -->
 
 		<!-- JS -->
-		<script src="lib/js/blogscript.js"></script>
+		<script src="lib/js/dropdown.js"></script>
+		<script src="lib/js/fadein.js"></script>
 	</body>
 </html>

@@ -1,4 +1,9 @@
 
+/*
+#E8E8E8 light grey
+#4C4C4C dark grey
+*/
+
 /*******************************************************************************
 Custom CSS
 @author: Lvl2Pillow 2014
@@ -35,18 +40,11 @@ html,
 body {
 	height: 100%;
 	min-width: 320px;
-	overflow: hidden;
 }
 
-.scrollable {
-	margin-top: -48px;
-	padding-top: 48px;
-	height: 100%;
-	overflow: auto;
-}
-
-.unscrollable {
+.fill-height {
 	margin-bottom: -80px;
+	padding-bottom: 80px;
 	min-height: 100%;
 }
 
@@ -54,22 +52,23 @@ body {
 	height: 80px;
 }
 
+.main-content {
+	margin-top: 64px;
+}
+
 .container {
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 768px;
 }
 
+body .container {
+	padding: 0 64px;
+}
+
+footer .container,
 .navbar .container {
-	padding: 0 8px;
-}
-
-body .container,
-footer .container {
 	padding: 0 16px;
-}
-
-.content {
-	margin-top: 64px;
 }
 
 .h16 {
@@ -87,10 +86,10 @@ footer .container {
 .divider {
 	height: 1px;
 	width: 100%;
-	background-image: -webkit-linear-gradient(left, #ffffff, #e7e7e7, #ffffff);
-	background-image: -moz-linear-gradient(left, #ffffff, #e7e7e7, #ffffff);
-	background-image: -ms-linear-gradient(left, #ffffff, #e7e7e7, #ffffff);
-	background-image: -o-linear-gradient(left, #ffffff, #e7e7e7, #ffffff);
+	background-image: -webkit-linear-gradient(left, #ffffff, #e8e8e8, #ffffff);
+	background-image: -moz-linear-gradient(left, #ffffff, #e8e8e8, #ffffff);
+	background-image: -ms-linear-gradient(left, #ffffff, #e8e8e8, #ffffff);
+	background-image: -o-linear-gradient(left, #ffffff, #e8e8e8, #ffffff);
 }
 
 .invisible {
@@ -99,6 +98,10 @@ footer .container {
 
 .visible {
 	opacity: 1;
+}
+
+.hide {
+	display: none;
 }
 
 .no-select {
@@ -111,6 +114,7 @@ footer .container {
 }
 
 *::-webkit-scrollbar {
+	height: 2px;
 	width: 2px;
 }
 
@@ -169,18 +173,29 @@ h1, h2, h3, h4 {
 	color: #808080;
 }
 
-.navbar-links .active a, 
-.navbar-links .active a:hover{
-	color: #808080;
-}
 
 .tile, 
 .tile a {
 	color: #000000;
 }
 
-a .blog-panel {
+a .panel {
 	color: #000000;
+}
+
+/*----------------------------------------------------------------------------
+Warning
+----------------------------------------------------------------------------*/
+
+.banner-top {
+	padding: 0 8px;
+	top: 0;
+	text-align: center;
+}
+
+.warning {
+	color: red;
+	font-weight: 400;
 }
 
 /*----------------------------------------------------------------------------
@@ -196,33 +211,76 @@ header {
 	width: 100%;
 	position: fixed;
 	background-color: #f8f8f8;
-	border-bottom: solid 1px #e7e7e7;
-}
-
-#logo-link {
-	height: 48px;
-	display: inline-block;
+	border-bottom: solid 1px #e8e8e8;
 }
 
 .navbar-logo {
 	height: 48px;
+	display: inline-block;
+}
+
+#zz {
+	height: 48px;
 }
 
 .navbar-links {
+	height: 48px;
 	display: inline-block;
 	float: right;
 	text-align: center;
 }
 
 .navbar-links li {
-	list-style: none;
+	padding: 0 6px;
 	display: inline-block;
+	line-height: 48px;
+	list-style: none;
 }
 
-.navbar-links li a i {
-	margin: 0 6px;
-	width: 36px;
+.navbar-arrow {
+	margin-right: -8px;
+	padding: 0 8px;
+	display: none;
+	float: right;
+	text-align: right;
+}
+
+.navbar-arrow i {
 	line-height: 48px;
+}
+
+.active {
+	background-color: #e8e8e8;
+}
+
+@media all and (max-width: 400px) {
+	.navbar-arrow {
+		display: inline-block;
+	}
+
+	.dropdown {
+		position: absolute;
+		clear: both;
+		top: 48px;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+
+	.navbar-links li {
+		padding: 0 16px 0 0;
+		display: block;
+		text-align: right;
+		background-color: #f8f8f8;
+	}
+
+	.navbar-links li:nth-child(3) {
+		border-bottom: solid 1px #e8e8e8;
+	}
+
+	.navbar-links .active {
+		background-color: #e8e8e8;
+	}
 }
 
 /*----------------------------------------------------------------------------
@@ -234,16 +292,19 @@ About
 }
 
 .typed-cursor {
+	z-index: -1;
 	font-family: Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: 200;
     opacity: 1;
-    -webkit-animation: blink 0.6s infinite;
-    -moz-animation: blink 0.6s infinite;
-    animation: blink 0.6s infinite;
+    position: relative;
+    -webkit-animation: blink 0.8s infinite;
+    -moz-animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
 }
 
 .typed-cursor-hidden {
+	/*z-index: -999;*/
     opacity: 0;
     -webkit-animation: none;
     -moz-animation: none;
@@ -251,7 +312,7 @@ About
 }
 
 @keyframes blink {
-    0% { opacity:1; }
+    0% { opacity:1;}
     50% { opacity:0; }
     100% { opacity:1; }
 }
@@ -268,9 +329,13 @@ About
     100% { opacity:1; }
 }
 
+
+
+
 .tile-container {
+	min-width: 720px; /* FIXME*/
 	margin: 0 auto;
-	width: 100%;
+	/*width: 100%;*/
 	text-align: center;
 }
 
@@ -281,20 +346,22 @@ About
 	min-height: 160px;
 	margin: 8px;
 	
-	border: 1px solid #e7e7e7;
+	border: 1px solid #e8e8e8;
 	border-radius: 4px;
 	background-color: darkgrey;
 
-	border: 1px solid #e7e7e7;
+	border: 1px solid #e8e8e8;
 	border-radius: 4px;
 
 	display: inline-block;
-
+/*
 	-webkit-transition: all 2s ease-out;
 	-moz-transition: all 2s ease-out;
 	-ms-transition: all 2s ease-out;
 	-o-transition: all 2s ease-out;
 	transition: all 2s ease-out;
+this causes the tiles to  shake
+	*/
 
 	text-align: left;
 }
@@ -330,15 +397,36 @@ About
 	min-height: 160px;
 }
 
+.brick {
+	margin: 6px 0;
+
+
+
+	color: #000000;
+
+	width: 256px;
+	min-height: 160px;
+	margin: 8px;
+	
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+	background-color: darkgrey;
+
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+
+	display: inline-block;
+}
+
 /*----------------------------------------------------------------------------
 Blog
 ----------------------------------------------------------------------------*/
 
-.blog-panel {
+.panel {
 	margin: 16px auto;
 	min-height: 160px;
 	width: 96%;
-	border: 1px solid #e7e7e7;
+	border: 1px solid #e8e8e8;
 	border-radius: 4px;
 	-webkit-transition: all 2s ease-out;
 	-moz-transition: all 2s ease-out;
@@ -347,7 +435,7 @@ Blog
 	transition: all 2s ease-out;
 }
 
-.blog-panel-overlay {
+.panel-overlay {
 	margin: 0;
 	padding: 12px;
 	min-height: 160px;
@@ -360,15 +448,15 @@ Blog
 	transition: all 0.4s ease-out;
 }
 
-.blog-panel-overlay:hover {
+.panel-overlay:hover {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
-.blog-panel-header {
+.panel-header {
 	width: 100%;
 }
 
-.blog-panel h4 {
+.panel h4 {
 	display: inline-block;
 }
 
@@ -396,13 +484,41 @@ Blog
 Contact
 ----------------------------------------------------------------------------*/
 
+.inline-block {
+	display: inline-block;
+}
+
 .social-icons {
-	font-size: 24px;
+	font-size: 32px;
 	text-align: center;
 }
 
 .social-icon {
+	line-height: 64px;
 	width: 128px;
+}
+
+#github:hover {
+	color: #4183C4;
+}
+
+#linkedin:hover {
+	color: #0976b4;
+}
+
+#email:hover {
+	color: #0072C6;
+}
+
+#mobile:hover {
+	color: #1D77EF;
+}
+
+@media all and (max-width: 400px) {
+	.social-icon {
+		height: 64px;
+		width: 80px;
+	}
 }
 
 /*----------------------------------------------------------------------------
@@ -410,5 +526,16 @@ Footer
 ----------------------------------------------------------------------------*/
 
 #heart {
-	height: 16px;
+	font-size: 16px;
+	-webkit-transition: color 0.2s ease-out;
+	-moz-transition: color 0.2s ease-out;
+	-o-transition: color 0.2s ease-out;
+	-ms-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
 }
+
+#heart:hover {
+	color: #e31b23;
+}
+
+

@@ -2,61 +2,147 @@
 <html lang="en">
 	<head>
 		<!-- metadata -->
+		<meta charset="UTF-8">
+
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="My website and blog." />
 		<meta name="author" content="Henry Su (Lvl2Pillow)" />
 		<!-- title -->
-		<title>Henry Su | About</title>
+		<title>Henry Su | Contact</title>
 		<!-- favicon -->
 		<link href="lib/img/zz.png" rel="shortcut icon" type="image/png" />
 		<!-- CSS -->
-		<link rel="stylesheet" href="lib/jquery-ui-1.11.4/jquery-ui.min.css" />
-		<link rel="stylesheet" href="lib/font-awesome-4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="lib/css/font-awesome-4.3.0/css/font-awesome.css" />
 		<link rel="stylesheet" href="lib/css/style.css" />
+		<link rel="stylesheet" href="lib/css/ionicons-2.0.1/css/ionicons.css" />
 		<!-- JS -->
 		<script src="lib/js/jquery-1.11.2.min.js"></script>
-		<script src="lib/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
 		<script src="lib/js/typed.js-master/js/typed.js"></script>
+		<script src="lib/js/masonry.pkgd.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="lib/css/noscriptstyle.css" />
+		</noscript>
 	</head>
 
 	<body>
-		<!-- Header/ Navbar -->
-		<header>
-			<nav class="navbar no-select">
-				<div class="container">
-					<!-- brand logo -->
-					<a id="logo-link" href="about.html" title="ZZ">
-						<object class="navbar-logo" data="lib/img/zz.svg" type="image/svg+xml">
-							<img src="lib/img/zz.png" />
-						</object>
-					</a>
-					<!-- nav links -->
-					<div id="navbar-links" class="navbar-links">
-						<ul>
-							<li class="active"><a href="about.html" title="About"><i class="fa fa-info fa-2x"></i></a></li>
-							<li><a href="blogs.html" title="Blog"><i class="fa fa-pencil fa-2x"></i></a></li>
-							<li title="Contact"><a href="contact.html"><i class="fa fa-phone fa-2x"></i></a></li>
-						</ul>
+		<!-- Not supported for old IE versions -->
+		<!--[if lte IE 8]>
+			<p class="banner-top warning">Please upgrade to the latest version of Internet Explorer to view this page properly.</p>
+		<![endif]-->
+		<!-- Javascript disabled -->
+		<noscript>
+			<p class="banner-top warning">Please enable Javascript to view this page properly.</p>
+		</noscript>
+		<div class="fill-height">
+			<!-- Header -->
+			<header>
+				<nav class="navbar no-select">
+					<div class="container">
+						<!-- brand logo -->
+						<a class="navbar-logo" href="about.html" title="ZZ">
+							<object id="zz" data="lib/img/zz.svg" type="image/svg+xml">
+								<img src="lib/img/zz.png" />
+							</object>
+						</a>
+						<!-- nav links -->
+						<div class="navbar-links">
+							<a class="navbar-arrow" href="#"><i class="fa fa-bars fa-2x"></i></a>
+							<ul class="dropdown">
+								<li  class="active"><a href="about.html" title="About"><h3>About</h3></a></li>
+								<li><a href="blogs.html" title="Blog"><h3>Blog</h3></i></a></li>
+								<li><a href="contact.html" title="Contact"><h3>Contact</h3></a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</nav>
-		</header>
+				</nav>
+			</header>
 
 		<!-- Main content -->
-		<div class="scrollable">
+		
 			<div class="content">
-				<div class="container">
+				<div class="">
 					<h2>Greetings,</h2>
 					I'm Henry. I'm a <span class="typed-string"></span>
 					</br>
 					Here are a few projects that I've worked on...
+					</br>
+					<span class="typcn typcn-info-large-outline"><span>
 					<div class="h64"></div>
 					<div class="divider"></div>
 					<div class="h64"></div>
 					<!-- Tiles -->
 					<div class="tile-container">
 
-						<div class="tile invisible">
+						<div class="panel tile invisible">
+							<div class="tile-overlay">
+								<a href="#" title="Sydney Student">
+									<div class="tile-content">
+										<h4>Sydney Student</h4>
+										<span class="blog-date">2014-2015</span>
+										<p>
+										hello world
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="panel tile invisible" style="height: 200px;">
+							<div class="tile-overlay">
+								<a href="#" title="Sydney Student">
+									<div class="tile-content">
+										<h4>Sydney Student</h4>
+										<span class="blog-date">2014-2015</span>
+										<p>
+										hello world
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="panel tile invisible">
+							<div class="tile-overlay">
+								<a href="#" title="Sydney Student">
+									<div class="tile-content">
+										<h4>Sydney Student</h4>
+										<span class="blog-date">2014-2015</span>
+										<p>
+										hello world
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="panel tile invisible">
+							<div class="tile-overlay">
+								<a href="#" title="Sydney Student">
+									<div class="tile-content">
+										<h4>Sydney Student</h4>
+										<span class="blog-date">2014-2015</span>
+										<p>
+										hello world
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="panel tile invisible">
+							<div class="tile-overlay">
+								<a href="#" title="Sydney Student">
+									<div class="tile-content">
+										<h4>Sydney Student</h4>
+										<span class="blog-date">2014-2015</span>
+										<p>
+										hello world
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="panel tile invisible">
 							<div class="tile-overlay">
 								<a href="#" title="Sydney Student">
 									<div class="tile-content">
@@ -71,32 +157,30 @@
 						</div>
 
 
-
 					</div> <!-- tile-container -->
 					<div class="h64"></div>
 				</div> <!-- container -->
 			</div> <!-- content -->
+		</div> <!-- fill-height -->
+		
 
-			<!-- Footer -->
-			<footer class="footer">
-				<div class="container">
-					<div class="divider"></div>
-					<div class="pad16"></div>
-					<div class="text-center">
-						<span class="vcenter">Made with</span>
-						<span class="vcenter">
-							<object id="heart" data="lib/img/heart.svg" type="image/svg+xml">
-								<!-- Fallback image -->
-								<img src="lib/img/heart.png" />
-							</object>
-						</span>
-						<span class="vcenter">by Lvl2Pillow.</span>
-					</div>
-					<div class="pad16"></div>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="divider"></div>
+				<div class="pad16"></div>
+				<div class="text-center">
+					Made with
+						<i class="icon ion-bowtie" style="font-size: 28px;"></i>
+					by Lvl2Pillow.
 				</div>
-			</footer>
-		</div> <!-- scrollable -->
+				<div class="pad16"></div>
+			</div>
+		</footer>
+		
 
-		<script src="lib/js/script.js"></script>
+		<script src="lib/js/dropdown.js"></script>
+		<script src="lib/js/about.js"></script>
+		<script src="lib/js/fadein.js"></script>
 	</body>
 </html>
