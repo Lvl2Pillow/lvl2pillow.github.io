@@ -127,8 +127,12 @@ Text
 
 html {
 	color: #000000;
-	font: 200 16px/28px Helvetica, sans-serif;
+	font: 200 16px/24px Helvetica, sans-serif;
 	text-rendering: optimizeLegibility;
+}
+
+p {
+	margin-top: 8px;
 }
 
 a {
@@ -181,6 +185,42 @@ a .panel {
 	color: #000000;
 }
 
+.tag {
+	color: #000000;
+	background-color: #bbbbbb;
+	border-radius: 4px;
+	padding: 1px 4px;
+	white-space: nowrap;
+
+	-webkit-transition: color 0.2s ease-out;
+	-moz-transition: color 0.2s ease-out;
+	-ms-transition: color 0.2s ease-out;
+	-o-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
+}
+
+.tag:hover {
+	color: #ffffff;
+}
+
+.subtitle {
+	padding-left: 4px;
+	color: #bbbbbb;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 18px;
+}
+
+/*#java {
+	color: #5382a1;
+	background-color: #f89820;
+}
+
+#rails {
+	color: #ffffff;
+	background-color: #b02b2c;
+}*/
+
 /*----------------------------------------------------------------------------
 Warning
 ----------------------------------------------------------------------------*/
@@ -210,6 +250,7 @@ header {
 	position: fixed;
 	background-color: #f8f8f8;
 	border-bottom: solid 1px #e8e8e8;
+	z-index: 999;
 }
 
 .navbar-logo {
@@ -290,9 +331,6 @@ About
 }
 
 .typed-cursor {
-	font-family: Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: 200;
 	opacity: 1;
 	position: relative;
 	z-index: -1;
@@ -327,7 +365,7 @@ About
 }
 
 
-.brick-container {
+.masonry-container {
 	/*width: 640px;*/
 	margin: 0 auto;
 	text-align: center;
@@ -337,6 +375,15 @@ About
 /*----------------------------------------------------------------------------
 Blog
 ----------------------------------------------------------------------------*/
+
+.panel h4 {
+	text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; 
+}
+
 
 .panel {
 	margin-top: 8px;
@@ -352,10 +399,16 @@ Blog
 	display: block;
 }
 
+.masonry-container .panel {
+	margin: 4px;
+	width: 300px;
+	display: inline-block;
+}
+
+
+
 .panel-overlay {
 	margin: 0;
-	padding: 12px;
-	min-height: 160px;
 	width: 100%;
 	border-radius: 4px;
 	-webkit-transition: background-color 0.4s ease-out;
@@ -366,8 +419,15 @@ Blog
 }
 
 .panel-overlay:hover {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.8);
 }
+
+.panel-content {
+	padding: 12px;
+	min-height: 120px;
+	text-align: left;
+}
+
 
 .panel-header {
 	width: 100%;
@@ -385,11 +445,18 @@ Blog
 	float: right;
 }
 
-.blog-description {
-	clear: both;
+.blog-description p:nth-of-type(2) {
+	display: none;
+	opacity: 0;
+	-webkit-transition: opacity 0.4s ease-out;
+	-moz-transition: opacity 0.4s ease-out;
+	-ms-transition: opacity 0.4s ease-out;
+	-o-transition: opacity 0.4s ease-out;
+	transition: opacity 0.4s ease-out;
 }
 
-#haskell {
+
+#learnyouahaskell {
 	background: url("../img/haskell.png");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -400,26 +467,6 @@ Blog
 
 
 
-.brick {
-
-
-	width: 256px;
-	min-height: 160px;
-
-	margin: 4px;
-
-	color: #000000;
-
-	border: 1px solid #e8e8e8;
-	border-radius: 4px;
-	background-color: darkgrey;
-
-
-	display: inline-block;
-
-	z-index: -1;
-
-}
 
 
 
@@ -479,10 +526,6 @@ footer i {
 	-o-transition: color 0.2s ease-out;
 	-ms-transition: color 0.2s ease-out;
 	transition: color 0.2s ease-out;
-}
-
-#lessthanthree {
-	cursor: default;
 }
 
 #bowtie {

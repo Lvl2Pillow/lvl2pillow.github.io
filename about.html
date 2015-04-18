@@ -3,19 +3,18 @@
 	<head>
 		<!-- metadata -->
 		<meta charset="utf-8">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="My website and blog." />
-		<meta name="author" content="Henry Su (Lvl2Pillow)" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="My website and blog."/>
+		<meta name="author" content="Henry Su (Lvl2Pillow)"/>
 		<!-- title -->
 		<title>Henry Su | About</title>
 		<!-- favicon -->
-		<link href="lib/img/zz.png" rel="shortcut icon" type="image/png" />
+		<link rel="shortcut icon" type="image/png" href="lib/img/zz.png"/>
 		<!-- CSS -->
-		<link rel="stylesheet" href="lib/css/font-awesome-4.3.0/css/font-awesome.css" />
-		<link rel="stylesheet" href="lib/css/style.css" />
+		<link rel="stylesheet" href="lib/css/font-awesome-4.3.0/css/font-awesome.css"/>
+		<link rel="stylesheet" href="lib/css/style.css"/>
 		<noscript>
-			<link rel="stylesheet" href="lib/css/noscriptstyle.css" />
+			<link rel="stylesheet" href="lib/css/noscriptstyle.css"/>
 		</noscript>
 		<!-- JS -->
 		<script src="lib/js/jquery-1.11.2.min.js"></script>
@@ -31,12 +30,12 @@
 			</noscript>
 			<!-- Header -->
 			<header>
-				<nav class="navbar no-select">
+				<nav class="navbar">
 					<div class="container">
 						<!-- brand logo -->
 						<a class="navbar-logo" href="about.html" title="ZZ">
 							<object id="zz" data="lib/img/zz.svg" type="image/svg+xml">
-								<img src="lib/img/zz.png" />
+								<img src="lib/img/zz.png"/>
 							</object>
 						</a>
 						<!-- nav links -->
@@ -56,89 +55,180 @@
 			<div class="main-content container">
 					<h2>Greetings,</h2>
 					<p>
-						I'm Henry. <span class="noscript">I'm a <span class="typed-string"></span></span>
+						I'm Henry. <span class="noscript">I'm a <em><span class="typed-string"></span></em></span>
+					</p>
+					<p class="subtitle">
+						Bachelor of IT; majored in Computer Science.
 						</br>
-						Here are a some of projects and experiences...
+						Distinction WAM and First Class Honours.
 					</p>
 					<div class="h64"></div>
 					<div class="divider"></div>
 					<div class="h64"></div>
 					<!-- Tiles -->
-					<div class="brick-container">
 
 
+					<div class="masonry-container">
+						<div id="haskell" class="panel centered invisible">
+							<div class="panel-overlay panel-content">
+								<div id="blog-header">
+									<h4>Prospection</h4>
+									<span class="blog-date">March 2015 - Present</span>
+								</div>
+								<div id="blog-description">
+									<p>Software Developer &amp; Tester</p>
+									<p>
+										Creating rich analytical tools and dashboards for pharmaceutical companies. Involves processing and crunching large data to extract useful insights that will help steer marketing strategies. This opportunity has taught me valuable experiences in Agile-like software development, team collaboration, and systems architecture.
+									</p>
+									<p>
+										<a class="button" href="">Prospection Website</a>
+									</p>
+									<p>
+										<span id="java" class="tag">Java</span>
+										<span id="java" class="tag">Play Framework</span>
+										<span id="java" class="tag">HTML5</span>
+										<span id="java" class="tag">CSS</span>
+										<span id="java" class="tag">JavaScript</span>
+										<span id="java" class="tag">JQuery</span>
+										<span id="java" class="tag">SQL</span>
+										<span id="java" class="tag">JIRA</span>
+										<span id="java" class="tag">Bitbucket</span>
+									</p>
+								</div>
+							</div>
+						</div>
 						
-						<div class="panel brick centered invisible">
-							<a href="#">
+							<div class="panel centered invisible">
 								<div class="panel-overlay panel-content">
 									<div id="blog-header">
-										<h4>Sydney Student</h4>
-										<span class="blog-date">2014-2015</span>
+										<h4>INFO1003 Tutor</h4>
+										<span class="blog-date">March 2105 - Present</span>
+									</div>
+									<div id="blog-description">
+										<p>INFO1003 - Foundations to IT</p>
 										<p>
-										hello world
+											Helping first year students learn a broad range of information technologies - from HTML to JS to Excel. This opportunity has enchanced my planning, communication, and teaching skills. But above all, this has been a most enjoyable and rewarding experience.
+										</p>
+										<p>
+											<span id="java" class="tag">HTML5</span>
+											<span id="java" class="tag">CSS</span>
+											<span id="java" class="tag">JavaScript</span>
+											<span id="java" class="tag">Excel</span>
 										</p>
 									</div>
-									<p id="blog-description">
-										So I started learning Haskell...
-									</p>
 								</div>
-								</a>
 							</div>
-						
-							<div class="panel brick centered invisible">
-							<a href="#">
+
+							<div class="panel centered invisible">
 								<div class="panel-overlay panel-content">
 									<div id="blog-header">
-										<h4>Sydney Student</h4>
-										<span class="blog-date">2014-2015</span>
+										<h4>CARE</h4>
+										<span class="blog-date">2014</span>
+									</div>
+									<div id="blog-description">
+										<p>CAusality REasoning</p>
 										<p>
-										hello world
+											As part of my Honours thesis, I improved an existing algorithm for causality reasoning. These improvements led to a higher accuracy, and also a deterministic solution. In addition, I created a framework (CARE) that utilised the algorithm and enabled users to perform causality reasoning on high-dimensionality datasets. The CARE framework was coded in Python. I am currently writing a paper on my research, which I intend to publish.
+										</p>
+										<p>
+											<span id="java" class="tag">Python</span>
+											<span id="java" class="tag">NetworkX</span>
+											<span id="java" class="tag">Boolean Minimization</span>
+											<span id="java" class="tag">Statistics</span>
+											<span id="java" class="tag">Java</span>
 										</p>
 									</div>
-									<p id="blog-description">
-										So I started learning Haskell...
-									</p>
 								</div>
-								</a>
 							</div>
 
-								<div class="panel brick centered invisible">
-							<a href="#">
+							<div class="panel centered invisible">
 								<div class="panel-overlay panel-content">
 									<div id="blog-header">
-										<h4>Sydney Student</h4>
-										<span class="blog-date">2014-2015</span>
+										<h4>Sydney Student Talent</h4>
+										<span class="blog-date">Nov, 2014 - June, 2015</span>
+									</div>
+									<div id="blog-description">
+										<p>Data Analyst</p>
 										<p>
-										hello world
+											I worked with the Sydney Student Talent for 6 months in developing a new administration system for university students. This job enriched my Python scripting, SQL, Excel and VBA skills. Additionally, I acquired many valuable experiences in working with a team on a large-scale project. 
+										</p>
+										<p>
+											<a class="button" href="https://sydneystudent.sydney.edu.au/sitsvision/wrd/siw_lgn" target="_blank">USYD Login Page</a>
+										</p>
+										<p>
+											<span id="java" class="tag">SQL</span>
+											<span id="java" class="tag">Python</span>
+											<span id="java" class="tag">Excel</span>
+											<span id="java" class="tag">VBA</span>
+											<span id="java" class="tag">Regex</span>
+											<span id="java" class="tag">JIRA</span>
 										</p>
 									</div>
-									<p id="blog-description">
-										So I started learning Haskell...
-									</p>
 								</div>
-								</a>
 							</div>
 
-								<div class="panel brick centered invisible">
-							<a href="#">
+
+							<div class="panel centered invisible">
 								<div class="panel-overlay panel-content">
 									<div id="blog-header">
-										<h4>Sydney Student</h4>
-										<span class="blog-date">2014-2015</span>
+										<h4>ELEC3609 Project</h4>
+										<span class="blog-date">Jun 2013 - Nov 2013</span>
+									</div>
+									<div id="blog-description">
+										<p>Team Leader, Designer</p>
 										<p>
-										hello world
+											USYD Connect
+											</br>
+											Together with a team of 5, we created a web application using Ruby on Rails, HTML5, Javascript, JQuery, and CSS. The web application was deployed with Heroku and using Postgres as our database. The web application provided services for students to communicate with each other, similar to a forum. I was team leader and designer for this project.
+										</p>
+										<p>
+											<a class="button" href="http://usydconnect.herokuapp.com/" target="_blank">USYD Connect</a>
+										</p>
+										<p>
+											<span id="java" class="tag">Ruby</span>
+											<span id="java" class="tag">Ruby on Rails</span>
+											<span id="java" class="tag">Postgres</span>
+											<span id="java" class="tag">SQL</span>
+											<span id="java" class="tag">HTML</span>
+											<span id="java" class="tag">CSS</span>
+											<span id="java" class="tag">JavaScript</span>
+											<span id="java" class="tag">GitHub</span>
+											<span id="java" class="tag">Heroku</span>
+											<span id="java" class="tag">Team Management</span>
 										</p>
 									</div>
-									<p id="blog-description">
-										So I started learning Haskell...
-									</p>
 								</div>
-								</a>
 							</div>
 
 
+							<div class="panel centered invisible">
+								<div class="panel-overlay panel-content">
+									<div id="blog-header">
+										<h4>COMP5338 Project</h4>
+										<span class="blog-date">Mar 2014 - Jun 2014</span>
+									</div>
+									<div id="blog-description">
+										<p>Developer</p>
+										<p>
+											Data Models
+											</br>
+											As a group of three, we designed and implemented a NoSQL system that could efficiently execute common queries from an online music website. We used technologies including MongoDB and Neo4j.
+										</p>
+										<p>
+											<a class="button" href="http://usydconnect.herokuapp.com/" target="_blank">USYD Connect</a>
+										</p>
+										<p>
+											<span id="java" class="tag">Java</span>
+											<span id="java" class="tag">NoSQL</span>
+											<span id="java" class="tag">Neo4j</span>
+											<span id="java" class="tag">MongoDB</span>
+											<span id="java" class="tag">System Design</span>
+											<span id="java" class="tag">Polygot Persistence</span>
+										</p>
+									</div>
+								</div>
+							</div>
 
-						
 
 				</div> <!-- tile-container -->
 				<div class="h64"></div>
