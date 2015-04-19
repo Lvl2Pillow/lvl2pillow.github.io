@@ -197,7 +197,7 @@ a .panel {
 }
 
 .tag {
-	color: #000000;
+	color: #e8e8e8;
 	background-color: #bbbbbb;
 	border-radius: 4px;
 	padding: 1px 4px;
@@ -403,6 +403,10 @@ About
 }
 
 
+#usyd {
+	border-color: #ce1126;
+}
+
 #usyd .panel-ribbon {
 	background-color: #ce1126;
 	border-bottom: solid 8px #f5af00;
@@ -560,6 +564,87 @@ Blog
 		margin-right: 0;
 	}
 }*/
+
+/*----------------------------------------------------------------------------
+Tags
+----------------------------------------------------------------------------*/
+
+
+.tag.ruby,
+.tag.rails {
+	background-color: #CC342D;
+}
+
+.tag.java,
+.tag.js {
+	background-color: #fda418;
+}
+
+.tag.sql,
+.tag.postgres {
+	background-color: #009ace;
+}
+
+.tag.jquery {
+	background-color: #0769AD;
+}
+
+.tag.jira,
+.tag.bit {
+	background-color: #205081;
+}
+
+.tag.play {
+	background-color: #92d13d;
+}
+
+.tag.css {
+	background-color: #2aa9e0;
+}
+
+.tag.html5,
+.tag.html {
+	background-color: #f1652a;
+}
+
+.tag.python {
+	background-color: #3776ab;
+}
+
+.tag.vba {
+	background-color: #339CCB;
+}
+
+.tag.excel {
+	background-color: #da3b01;
+}
+
+.tag.networkx {
+	background-color: #AFC1C4;
+}
+
+.tag.neo4j {
+	background-color: #008cc2;
+}
+
+.tag.mongo {
+	background-color: #6ba442;
+}
+
+.tag.git {
+	background-color: #4183c4;
+}
+
+.tag.roku {
+	background-color: #6e5baa;
+}
+
+@media all and (max-width: 600px) {
+	.tag {
+		color: #ffffff;
+	}
+
+}
 
 
 /*----------------------------------------------------------------------------
