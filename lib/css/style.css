@@ -21,6 +21,11 @@ object {
 	pointer-events: none;
 }
 
+/* what?! */
+body {
+	overflow-x: hidden;
+}
+
 /*----------------------------------------------------------------------------
 General
 ----------------------------------------------------------------------------*/
@@ -121,6 +126,8 @@ footer .container,
 }
 
 
+
+
 /*----------------------------------------------------------------------------
 Text
 ----------------------------------------------------------------------------*/
@@ -153,6 +160,10 @@ a:hover {
 h1, h2, h3, h4 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-weight: 200;
+}
+
+h4 {
+	font-size: 20px;
 }
 
 .text-center {
@@ -371,19 +382,67 @@ About
 	text-align: center;
 }
 
+.panel-ribbon {
+	margin: -13px -13px 9px -13px;
+	height: 24px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.panel-header p {
+	margin-top: 0;
+}
+
+.panel-subtitle,
+.panel-date {
+	padding-left: 4px;
+	color: #000000;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 18px;
+}
+
+
+#usyd .panel-ribbon {
+	background-color: #ce1126;
+	border-bottom: solid 8px #f5af00;
+}
+
+#prospection .panel-ribbon {
+	background-color: #8DC63F;
+	border-bottom: solid 8px #828282;
+}
+
+#prospection {
+	border-color: #8DC63F;
+}
+
+#prospection a {
+	color: #8DC63F;
+}
+
+#heroku {
+	background-color: #6E5BAA;
+}
+
+#neo4j {
+	color: #0f5788;
+	background-color: #58b535;
+}
+
+
 
 /*----------------------------------------------------------------------------
 Blog
 ----------------------------------------------------------------------------*/
 
-.panel h4 {
+/*.panel h4 {
 	text-shadow:
     -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
     1px 1px 0 #fff; 
-}
-
+}*/
 
 .panel {
 	margin-top: 8px;
@@ -468,6 +527,39 @@ Blog
 
 
 
+
+@media all and (max-width: 600px) {
+	body .container {
+		padding: 0 4px 0 4px;
+	}
+
+	.navbar .container,
+	footer .container {
+		padding: 0 4px;
+	}
+
+	.container {
+		max-width: 600px;
+	}
+
+	
+
+	.masonry-container .panel {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+
+}
+
+
+/* hacky fix */
+/*@media all and (max-width: 322px) {
+	.masonry-container {
+		margin-left: 4px;
+		margin-right: 0;
+	}
+}*/
 
 
 /*----------------------------------------------------------------------------
