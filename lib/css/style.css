@@ -125,7 +125,14 @@ footer .container,
 	background-color: #808080;
 }
 
+/*
+media query limits min = 320 <- iphone
+320-640 mobile landscape/portrait
 
+640+ tablets and desktop
+
+
+*/
 
 
 /*----------------------------------------------------------------------------
