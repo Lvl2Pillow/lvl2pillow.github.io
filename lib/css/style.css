@@ -7,11 +7,6 @@ Reset
 	padding: 0;
 	border: 0;
 	outline: 0;
-}
-
-*,
-*:after, 
-*:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -432,15 +427,23 @@ About
 	color: #8DC63F;
 }
 
+#heroku .panel-ribbon {
+	background-color: #6567a5;
+	border-bottom: solid 8px #c7c5e6;
+}
+
 #heroku {
-	background-color: #6E5BAA;
+	border-color: #6567a5;
+}
+
+#neo4j .panel-ribbon {
+	background-color: #58b535;
+	border-bottom: solid 8px #0f5788;
 }
 
 #neo4j {
-	color: #0f5788;
-	background-color: #58b535;
+	border-color: #58b535;
 }
-
 
 
 /*----------------------------------------------------------------------------
