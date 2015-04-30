@@ -9,24 +9,10 @@ My website and blog.
 
 ####Update:
 
-- New design and complete rework.
-- Efficient JS and CSS. Minified resources.
+- Complete rework.
 - Responsive design.
 - Compatible with more browsers.
 
 ####Requires:
 
 - JavaScript;
-- Something better than dial-up, maybe...
-
-####Supports:
-
-- **Browsers**:
-	- Chrome
-	- Safari
-	- Firefox
-	- Opera (untested)
-	- IE 10+ (limited support for IE 9)
-- **Devices**:
-	- Desktop
-	- Mobile (limited support, for now...)
