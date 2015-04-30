@@ -9,9 +9,11 @@ My website and blog.
 
 ####Update:
 
-- Complete rework.
-- Responsive design.
-- Compatible with more browsers.
+- Jekyll
+
+- Complete rework
+- Responsive design
+- Compatible with more browsers
 
 ####Requires:
 
