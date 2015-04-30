@@ -1,28 +1,34 @@
-<!DOCTYPE html>
+					<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- metadata -->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="description" content="My website and blog."/>
 		<meta name="author" content="Henry Su (Lvl2Pillow)"/>
-		<!-- title -->
-		<title>Henry Su | About</title>
 		<!-- favicon -->
-		<link rel="shortcut icon" type="image/png" href="lib/img/zz.png"/>
+		<link rel="shortcut icon" type="image/png" href="/assets/images/zz.png"/>
+		<title>Henry Su | About</title>
 		<!-- CSS -->
-		<link rel="stylesheet" href="lib/css/font-awesome-4.3.0/css/font-awesome.css"/>
-		<link rel="stylesheet" href="lib/css/style.css"/>
+		<link rel="stylesheet" href="/assets/font-awesome-4.3.0/css/font-awesome.css"/>
+		<link rel="stylesheet" href="/assets/stylesheets/custom.css"/>
+		
 		<noscript>
-			<link rel="stylesheet" href="lib/css/noscriptstyle.css"/>
+			<link rel="stylesheet" href="/css/noscriptstyle.css"/>
 		</noscript>
 		<!-- JS -->
-		<script src="lib/js/jquery-1.11.2.min.js"></script>
-		<script src="lib/js/typed.js-master/js/typed.js"></script>
-		<script src="lib/js/masonry.pkgd.min.js"></script>
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="/assets/javascripts/jquery-1.11.2.min.js"></script>
+		
+		<script src="/assets/javascripts/typed.js-master/js/typed.js"></script>
+		
+		<script src="/assets/javascripts/masonry.pkgd.min.js"></script>
+		
 	</head>
 
-	<body>
+						<body>
 		<div class="fill-height">
 			<!-- Javascript disabled -->
 			<noscript>
@@ -33,18 +39,25 @@
 				<nav class="navbar">
 					<div class="container">
 						<!-- brand logo -->
-						<a class="navbar-logo" href="about.html" title="ZZ">
-							<object id="zz" data="lib/img/zz.svg" type="image/svg+xml">
-								<img src="lib/img/zz.png"/>
+						<a class="navbar-logo" href="/about.html" title="ZZ">
+							<object id="zz" data="/assets/images/zz.svg" type="image/svg+xml">
+								<img src="/assets/images/zz.png"/>
 							</object>
 						</a>
 						<!-- nav links -->
 						<div class="navbar-links">
 							<a class="navbar-arrow" href="#"><i class="fa fa-bars fa-2x"></i></a>
 							<ul class="dropdown">
-								<li class="active"><a href="about.html" title="About"><h3>About</h3></a></li>
-								<li><a href="blogs.html" title="Blog"><h3>Blog</h3></i></a></li>
-								<li><a href="contact.html" title="Contact"><h3>Contact</h3></a></li>
+								
+								<li class="active">
+									<a href="about.html" title="About"><h3>About</h3></a>
+								</li>
+								<li >
+									<a href="blogs.html" title="Blog"><h3>Blog</h3></i></a>
+								</li>
+								<li >
+									<a href="contact.html" title="Contact"><h3>Contact</h3></a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -227,7 +240,7 @@
 
 				</div> <!-- masonry-container -->
 				<div class="h64"></div>
-			</div> <!-- main-content container -->
+					</div> <!-- main-content container -->
 		</div> <!-- fill-height -->
 
 		<!-- Footer -->
@@ -241,8 +254,10 @@
 			</div>
 		</footer>
 
-		<script src="lib/js/dropdown.js"></script>
-		<script src="lib/js/about.js"></script>
-		<script src="lib/js/fadein.js"></script>
+		
+		<script src="/assets/javascripts/about.js"></script>
+		
+		<script src="/assets/javascripts/fadein.js"></script>
+		
 	</body>
 </html>

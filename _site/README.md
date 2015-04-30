@@ -7,14 +7,12 @@ My website and blog.
 - Blog (coming soon)
 - Contact
 
-####Update:
+##Update:
 
+####01/05/15
 - Jekyll
 
+####12/04/15
 - Complete rework
 - Responsive design
 - Compatible with more browsers
-
-####Requires:
-
-- JavaScript;

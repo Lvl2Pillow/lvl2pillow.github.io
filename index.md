@@ -1,5 +1,3 @@
 ---
-title: Hello, World!
+layout: index
 ---
-
-blah

@@ -1,0 +1,38 @@
+	<body>
+		<div class="fill-height">
+			<!-- Javascript disabled -->
+			<noscript>
+				<p class="banner-top warning">Please enable JavaScript to view this page properly.</p>
+			</noscript>
+			<!-- Header -->
+			<header>
+				<nav class="navbar">
+					<div class="container">
+						<!-- brand logo -->
+						<a class="navbar-logo" href="{{ site.baseurl }}/about.html" title="ZZ">
+							<object id="zz" data="{{ site.baseurl }}/assets/images/zz.svg" type="image/svg+xml">
+								<img src="{{ site.baseurl }}/assets/images/zz.png"/>
+							</object>
+						</a>
+						<!-- nav links -->
+						<div class="navbar-links">
+							<a class="navbar-arrow" href="#"><i class="fa fa-bars fa-2x"></i></a>
+							<ul class="dropdown">
+								{% assign current = page.url | downcase %}
+								<li {% if current == "/about.html" %}class="active"{% endif %}>
+									<a href="about.html" title="About"><h3>About</h3></a>
+								</li>
+								<li {% if current == "/blogs.html" %}class="active"{% endif %}>
+									<a href="blogs.html" title="Blog"><h3>Blog</h3></i></a>
+								</li>
+								<li {% if current == "/contact.html" %}class="active"{% endif %}>
+									<a href="contact.html" title="Contact"><h3>Contact</h3></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<!-- Main content -->
+			<div class="main-content container">
