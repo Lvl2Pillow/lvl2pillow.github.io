@@ -1,0 +1,7 @@
+name: "Henry Su"
+description: "My website and blog."
+
+baseurl: ""
+
+permalink: date
+highlighter: pygments

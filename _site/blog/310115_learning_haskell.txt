@@ -1,0 +1,7 @@
+
+
+## Learning Haskell
+So, I've been having a little read and research now and then for a while, and Haskell seems quite interesting.
+Today, and hopefully for the next few days, I'm going to go through the tutorial here: <http://learnyouahaskell.com/chapters> and hopefully
+finally get a taste of functional programming and learn the basics of Haskell. I'll keep posts about my progress and interesting things I learn,
+and my thoughts about it.
