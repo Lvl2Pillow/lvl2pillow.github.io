@@ -321,23 +321,9 @@ header {
 		top: 48px;
 		left: 0;
 		right: 0;
-		max-height: 0;
-		width: 100%;
-		overflow: hidden;
-		-webkit-transition: max-height 0.6s ease-out;
-		-moz-transition: max-height 0.6s ease-out;
-		-ms-transition: max-height 0.6s ease-out;
-		-o-transition: max-height 0.6s ease-out;
-		transition: max-height 0.6s ease-out;
-	}
 
-	.navbar-links:hover > .dropdown {
-		max-height: 160px;
-		-webkit-transition: max-height 0.6s ease-out;
-		-moz-transition: max-height 0.6s ease-out;
-		-ms-transition: max-height 0.6s ease-out;
-		-o-transition: max-height 0.6s ease-out;
-		transition: max-height 0.6s ease-out;
+		width: 100%;
+
 	}
 
 	.navbar-links li {
