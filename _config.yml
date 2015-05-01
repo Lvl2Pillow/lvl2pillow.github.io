@@ -1,7 +1,5 @@
 name: "Henry Su"
 description: "My website and blog."
-
 baseurl: ""
-
-permalink: date
+permalink: /blogs/:categories/:year/:month/:day/:title.html
 highlighter: pygments

@@ -1,51 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<!-- metadata -->
-		<meta charset="utf-8">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="My website and blog." />
-		<meta name="author" content="Henry Su (Lvl2Pillow)" />
-		<!-- title -->
-		<title>Henry Su | Blogs</title>
-		<!-- favicon -->
-		<link href="lib/img/zz.png" rel="shortcut icon" type="image/png" />
-		<!-- CSS -->
-		<link rel="stylesheet" href="lib/css/font-awesome-4.3.0/css/font-awesome.css" />
-		<link rel="stylesheet" href="lib/css/ionicons-2.0.1/css/ionicons.css" />
-		<link rel="stylesheet" href="lib/css/style.css" />
-		<noscript>
-			<link rel="stylesheet" href="lib/css/noscriptstyle.css" />
-		</noscript>
-		<!-- JS -->
-		<script src="lib/js/jquery-1.11.2.min.js"></script>
-	</head>
 
-	<body>
-		<div class="fill-height">
-			<!-- Header -->
-			<header>
-				<nav class="navbar no-select">
-					<div class="container">
-						<!-- brand logo -->
-						<a class="navbar-logo" href="about.html" title="ZZ">
-							<object id="zz" data="lib/img/zz.svg" type="image/svg+xml">
-								<img src="lib/img/zz.png" />
-							</object>
-						</a>
-						<!-- nav links -->
-						<div class="navbar-links">
-							<a class="navbar-arrow" href="#"><i class="fa fa-bars fa-2x"></i></a>
-							<ul class="dropdown">
-								<li><a href="about.html" title="About"><h3>About</h3></a></li>
-								<li class="active"><a href="blogs.html" title="Blog"><h3>Blog</h3></i></a></li>
-								<li><a href="contact.html" title="Contact"><h3>Contact</h3></a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</header>
+{% include head.html %}
+{% include header.html %}
 
 			<!-- Main content -->
 			<div class="main-content container">
@@ -54,6 +9,13 @@
 				<s>Coming soon...</s></br>
 				A work in progress...
 				</p>
+
+				<ul>
+				{% for post in site.posts limit: 5 %}
+					<li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B, %Y" }}</a></li>
+				{% endfor %}
+				</ul>
+
 				<div class="h64"></div>
 				<div class="divider"></div>
 				<div class="h64"></div>
@@ -178,49 +140,5 @@
 
 				<div class="h64"></div>
 			</div> <!-- main-content container -->
-		</div> <!-- fill-height -->
-
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="container">
-				<div class="divider"></div>
-				<div class="h24"></div>
-				<div class="text-center">
-					A fancy <i id="bowtie" class="icon ion-bowtie"></i>
-				</div>
-				<script type="text/javascript">
-					//<![CDATA[
-					<!--
-					var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
-					"harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
-					"\\\\,l=x.length;for(i=0;i<l;i++){y%=127;o+=String.fromCharCode(x.charCodeAt" +
-					"(i)^(y++));}return o;}f(\\\"\\\\4>1&908#v.(2(821HC^\\\\\\\\020\\\\\\\\007\\" +
-					"\\\\\\027\\\\\\\\017\\\\\\\\027\\\\\\\\034W6\\\\\\\\0310\\\\\\\\0032\\\\\\\\"+
-					"033,\\\\\\\\005.\\\\\\\\007\\\\\\\\002\\\\\\\\024\\\\\\\\004W\\\\\\\\032\\\\"+
-					"\\\\026\\\\\\\\r\\\\\\\\010\\\\\\\\\\\\\\\\@^1:^qXkZsT}V\\\\\\\\177(%R-3s}d" +
-					"`|sK:04xpt}t\\\\\\\\010GWMGQOHF\\\\\\\\001\\\\\\\\003\\\\\\\\013Wq\\\\\\\\\\"+
-					"\\\\\\s^mFo@iBkLP\\\\\\\\\\\\\\\\\\\\\\\\033\\\\\\\\024_QH3a~cpl\\\\\\\\032" +
-					"5\\\\\\\\024'\\\\\\\\026?\\\\\\\\0209\\\\\\\\022;\\\\\\\\014%\\\\\\\\016'\\" +
-					"\\\\\\177~48/*a\\\\\\\\007.\\\\\\\\0010\\\\\\\\003\\\\\\\\024=\\\\\\\\026?\\"+
-					"\\\\\\0209\\\\\\\\022\\\\\\\\002\\\\\\\\004\\\\\\\\032\\\\\\\\017K\\\\\\\\0" +
-					"271\\\\\\\\0343\\\\\\\\036-\\\\\\\\006/\\\\\\\\000)\\\\\\\\002+\\\\\\\\014%" +
-					"\\\\\\\\016\\\\\\\\031\\\\\\\\023\\\\\\\\n\\\\\\\\r <\\\\\\\\\\\"\\\\3?Yt[f" +
-					"U~WxQzSdMfrxpdc0E8'/!-#\\\\\\\\023\\\\\\\\035\\\\\\\\021\\\\\\\\177\\\\\\\\" +
-					"006\\\\\\\\014\\\\\\\\035{ZuDwXqZsDmFNhGjYdMfO`IC\\\\\\\\026{\\\\\\\\0350\\" +
-					"\\\\\\037*\\\\\\\\0312\\\\\\\\033<ue8/?'?$opzoem\\\"\\\\,80)\\\"(f};)lo,0(r" +
-					"tsbus.o nruter};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=+l;x=+x{yr" +
-					"t{)37=!)31/l(tAedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav{)x(f noit" +
-					"cnuf\")"                                                                     ;
-					while(x=eval(x));
-					//-->
-					//]]>
-				</script>
-			</div>
-		</footer>
-
-		<!-- JS -->
-		<script src="lib/js/dropdown.js"></script>
-		<script src="lib/js/fadein.js"></script>
-		<script src="lib/js/blogs.js"></script>
-	</body>
-</html>
+		
+		{% include footer_bowtie.html %}

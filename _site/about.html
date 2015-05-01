@@ -9,7 +9,7 @@
 		<link rel="shortcut icon" type="image/png" href="/assets/images/zz.png"/>
 		<title>Henry Su | About</title>
 		<!-- CSS -->
-		<link rel="stylesheet" href="/assets/font-awesome-4.3.0/css/font-awesome.css"/>
+		<link rel="stylesheet" href="/assets/stylesheets/font-awesome-4.3.0/css/font-awesome.css"/>
 		<link rel="stylesheet" href="/assets/stylesheets/custom.css"/>
 		
 		<noscript>
@@ -46,17 +46,18 @@
 						</a>
 						<!-- nav links -->
 						<div class="navbar-links">
-							<a class="navbar-arrow" href="#"><i class="fa fa-bars fa-2x"></i></a>
+							<span class="navbar-arrow" href="#"><i class="fa fa-bars fa-2x"></i></span>
 							<ul class="dropdown">
 								
 								<li class="active">
-									<a href="about.html" title="About"><h3>About</h3></a>
+									<a href="/about.html" title="About"><h3>About</h3></a>
+								</li>
+								<!-- Note: naming of urls is important! -->
+								<li >
+									<a href="/blogs.html" title="Blogs"><h3>Blogs</h3></i></a>
 								</li>
 								<li >
-									<a href="blogs.html" title="Blog"><h3>Blog</h3></i></a>
-								</li>
-								<li >
-									<a href="contact.html" title="Contact"><h3>Contact</h3></a>
+									<a href="/contact.html" title="Contact"><h3>Contact</h3></a>
 								</li>
 							</ul>
 						</div>
@@ -64,17 +65,29 @@
 				</nav>
 			</header>
 
-			<!-- Main content -->
-			<div class="main-content container">
-					<h2>Greetings,</h2>
-					<p>
-						I'm Henry. <span class="noscript">I'm a <em><span class="typed-string"></span></em></span>
-					</p>
-					<p class="subtitle">
-						BIT (Honours) - major in Computer Science.
-						</br>
-						Distinction WAM and First Class Honours.
-					</p>
+				<!-- Main content -->
+				<div class="main-content container">
+					<div class="about-wrapper">
+						
+						<div class="profile-picture"></div>
+
+
+						<div class="inline-block about-description">
+							<h2>Greetings,</h2>
+							<p>
+								I'm Henry. <span class="noscript">I'm a <em><span class="typed-string"></span></em></span>
+							</p>
+							<p class="subtitle">
+								BIT (Honours) - major in Computer Science.
+								</br>
+								Distinction WAM and First Class Honours.
+							</p>
+						</div>
+						
+					</div>
+					<div style="clear:both;"></div>
+					
+
 					<div class="h64"></div>
 					<div class="divider"></div>
 					<div class="h64"></div>
@@ -240,7 +253,9 @@
 
 				</div> <!-- masonry-container -->
 				<div class="h64"></div>
-					</div> <!-- main-content container -->
+		</div> <!-- main-content container -->
+		
+					
 		</div> <!-- fill-height -->
 
 		<!-- Footer -->
@@ -254,6 +269,7 @@
 			</div>
 		</footer>
 
+		<!-- Additional JS -->
 		
 		<script src="/assets/javascripts/about.js"></script>
 		

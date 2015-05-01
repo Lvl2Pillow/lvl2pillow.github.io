@@ -102,6 +102,10 @@ footer .container,
 	display: none;
 }
 
+.inline-block {
+	display: inline-block;
+}
+
 .no-select {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -308,6 +312,7 @@ header {
 @media all and (max-width: 400px) {
 	.navbar-arrow {
 		display: inline-block;
+		cursor: pointer;
 	}
 
 	.dropdown {
@@ -316,7 +321,23 @@ header {
 		top: 48px;
 		left: 0;
 		right: 0;
+		max-height: 0;
 		width: 100%;
+		overflow: hidden;
+		-webkit-transition: max-height 0.6s ease-out;
+		-moz-transition: max-height 0.6s ease-out;
+		-ms-transition: max-height 0.6s ease-out;
+		-o-transition: max-height 0.6s ease-out;
+		transition: max-height 0.6s ease-out;
+	}
+
+	.navbar-links:hover > .dropdown {
+		max-height: 160px;
+		-webkit-transition: max-height 0.6s ease-out;
+		-moz-transition: max-height 0.6s ease-out;
+		-ms-transition: max-height 0.6s ease-out;
+		-o-transition: max-height 0.6s ease-out;
+		transition: max-height 0.6s ease-out;
 	}
 
 	.navbar-links li {
@@ -338,6 +359,52 @@ header {
 /*----------------------------------------------------------------------------
 About
 ----------------------------------------------------------------------------*/
+
+
+.about-wrapper {
+	width: 100%;
+}
+
+.about-description {
+	vertical-align:top;
+	display:inline-block;
+	text-align:left;
+}
+
+.profile-picture {
+	width: 240px;
+	height: 240px;
+	background-size: 240px 240px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url("https://mijn.kombijdepolitie.nl/assets/user_default.png");
+	border-radius: 4px;
+
+	display: inline-block;
+	float: right;
+
+
+		-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.25);
+box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+@media all and (max-width: 680px) {
+	.about-wrapper {
+		text-align: center;
+	}
+
+	.profile-picture {
+		float:none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.about-description {
+		margin-top: 32px;
+	}
+}
 
 .typed-string {
 	display: inline;
@@ -464,6 +531,10 @@ Blog
 	width: 100%;
 	border: 1px solid #e8e8e8;
 	border-radius: 4px;
+
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.25);
+box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.25);
 }
 
 .centered {
