@@ -236,14 +236,12 @@
 		</div>
 	</div> <!-- masonry-container -->
 	<script>
-		$(document).ready().delay(100).queue(function() {
-			var $container = $(".masonry-container");
-			$container.imagesLoaded(function() {
-				$container.masonry({
-					itemSelector: ".masonry-container .panel",
-					columnWidth: 2,
-					isFitWidth: true
-				});
+		var $container = $(".masonry-container");
+		$container.imagesLoaded(function() {
+			$container.masonry({
+				itemSelector: ".masonry-container .panel",
+				columnWidth: 2,
+				isFitWidth: true
 			});
 		});
 	</script>
