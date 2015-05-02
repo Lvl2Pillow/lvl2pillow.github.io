@@ -29,7 +29,7 @@
 	<div class="h64"></div>
 	<!-- Tiles -->
 	<div class="masonry-container">
-		<div id="prospection" class="panel center--horizontal invisible">
+		<div id="prospection" class="panel panel--masonry center--horizontal invisible">
 			<div class="panel-content">
 				<div class="panel-ribbon"></div>
 				<h3 class="panel-title">Prospection</h3>
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 
-		<div id="info1003" class="panel center--horizontal invisible">
+		<div id="info1003" class="panel panel--masonry center--horizontal invisible">
 			<div class="panel-content">
 				<div class="panel-ribbon"></div>
 				<h3 class="panel-title">INFO1003: Foundations to IT</h3>
@@ -76,7 +76,7 @@
 			</div>
 		</div>
 
-		<div id="usyd" class="panel center--horizontal invisible">
+		<div id="usyd" class="panel panel--masonry center--horizontal invisible">
 			<div class="panel-content">
 				<div class="panel-ribbon"></div>
 				<h3 class="panel-title">CARE: CAusality REasoning</h3>
@@ -97,7 +97,7 @@
 			</div>
 		</div>
 
-		<div id="usyd" class="panel center--horizontal invisible">
+		<div id="usyd" class="panel panel--masonry center--horizontal invisible">
 			<div class="panel-content">
 				<div class="panel-ribbon"></div>
 				<h3 class="panel-title">Sydney Student Talent</h3>
@@ -120,7 +120,7 @@
 			</div>
 		</div>
 
-		<div id="neo4j" class="panel center--horizontal invisible">
+		<div id="neo4j" class="panel panel--masonry center--horizontal invisible">
 			<div class="panel-content">
 				<div class="panel-ribbon"></div>
 				<h3 class="panel-title">COMP5338: Data Models</h3>
@@ -142,7 +142,7 @@
 			</div>
 		</div>
 
-		<div id="heroku" class="panel center--horizontal invisible">
+		<div id="heroku" class="panel panel--masonry center--horizontal invisible">
 			<div class="panel-content">
 				<div class="panel-ribbon"></div>
 				<h3 class="panel-title">ELEC3609: Internet Software Platforms</h3>
@@ -170,13 +170,12 @@
 		</div>
 	</div> <!-- masonry-container -->
 	<script>
-		var container = document.querySelector(".masonry-container");
-		new Masonry(container , {
+		new Masonry(document.querySelector(".masonry-container"), {
 			columnWidth: 2,
 			isFitWidth: true,
 			itemSelector: ".masonry-container .panel"
 		});
 	</script>
 	<div class="h64"></div>
-</div> <!-- main-content container -->
+</div> <!-- container content -->
 {% include footer.html %}
