@@ -291,26 +291,8 @@ Panel
 
 .panel--masonry {
 	margin: 4px;
-	width: 280px;
+	width: 240px;
 	display: inline-block;
-}
-
-@media all and (max-width: 1024px) {
-	.panel--masonry {
-		width: 400px;
-	}
-}
-
-@media all and (max-width: 768px) {
-	.panel--masonry {
-		width: 320px;
-	}
-}
-
-@media all and (max-width: 480px) {
-	.panel--masonry {
-		width: 300px;
-	}
 }
 
 .panel--blog {

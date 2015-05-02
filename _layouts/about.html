@@ -170,12 +170,10 @@
 		</div>
 	</div> <!-- masonry-container -->
 	<script>
-		$(document).load(function() {
-			new Masonry(document.querySelector(".masonry-container"), {
-				columnWidth: 4,
-				isFitWidth: true,
-				itemSelector: ".panel--masonry"
-			});
+		new Masonry(document.querySelector(".masonry-container"), {
+			columnWidth: 2,
+			isFitWidth: true,
+			itemSelector: ".masonry-container .panel"
 		});
 	</script>
 	<div class="h64"></div>
