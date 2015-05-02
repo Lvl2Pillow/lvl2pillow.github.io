@@ -170,12 +170,14 @@
 		</div>
 	</div> <!-- masonry-container -->
 	<script>
-		var $container = $(".masonry-container");
-		$container.imagesLoaded(function() {
-			$container.masonry({
-				itemSelector: ".masonry-container .panel",
-				columnWidth: 2,
-				isFitWidth: true
+		$(document).ready().delay(100).queue(function() {
+			var $container = $(".masonry-container");
+			$container.imagesLoaded(function() {
+				$container.masonry({
+					itemSelector: ".masonry-container .panel",
+					columnWidth: 2,
+					isFitWidth: true
+				});
 			});
 		});
 	</script>
