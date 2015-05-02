@@ -26,6 +26,8 @@
 		
 		<script src="/assets/masonry/masonry.pkgd.min.js"></script>
 		
+		<script src="/assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		
 		<script src="/assets/javascripts/fadein.js"></script>
 		
 	</head>
@@ -234,10 +236,13 @@
 		</div>
 	</div> <!-- masonry-container -->
 	<script>
-		new Masonry(document.querySelector(".masonry-container"), {
-			columnWidth: 2,
-			isFitWidth: true,
-			itemSelector: ".masonry-container .panel"
+		var $container = $(".masonry-container");
+		$container.imagesLoaded(function() {
+			$container.masonry({
+				itemSelector: ".masonry-container .panel",
+				columnWidth: 2,
+				isFitWidth: true
+			});
 		});
 	</script>
 	<div class="h64"></div>
