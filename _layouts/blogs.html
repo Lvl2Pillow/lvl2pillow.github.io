@@ -1,142 +1,29 @@
-
 {% include head.html %}
 {% include header.html %}
-
-			<!-- Main content -->
-			<div class="main-content container">
-				<h2>Blogs</h2>
-				<p>A work in progress...</p>
-				</br>
-				<h3>Recent Posts</h3>
-				<ul>
-				{% for post in site.posts limit: 5 %}
-					<li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B, %Y" }}</a></li>
-				{% endfor %}
-				</ul>
-
-				<div class="h64"></div>
-				<div class="divider"></div>
-				<div class="h64"></div>
-				<!-- Blogs -->
-				<a href="http://learnyouahaskell.com/" target="_blank">
-					<div id="learnyouahaskell" class="panel centered invisible">
-						<div class="panel-overlay panel-content">
-							<div class="blog-header">
-								<h4>Haskell</h4>
-								<span class="blog-date">01.02.15</span>
-							</div>
-							<div class="blog-description">
-								<p>
-									So a friend of mine and I decided, out of the blue, 
-									<em>"Hey, let's learn functional programming..."</em>.
-								</p>
-								<p class="invisible">
-									What initially seemed silly soon became really fun (and even <em>funky</em> at times =D).
-									I have to give credit to this author, Miran Lipovaca; she really makes the tutorial
-									and interesting read, with some very unusual (in an oddly good way) analogies.
-									...
-								</p>
-							</div>
-						</div>
+<!-- Main content -->
+<div class="container content">
+	<h2>Blogs</h2>
+	<p>A work in progress...</p>
+	<div class="h64"></div>
+	<div class="divider--horizontal"></div>
+	<div class="h64"></div>
+	<!-- All posts -->
+	{% for post in site.posts %}
+		<!-- Blogs -->
+		<a href="{{ post.url }}">
+			<div id="{{ post.panel_id }}" class="panel panel--blog invisible">
+				<div class="panel-overlay panel-content">
+					<div class="panel-header">
+						<h3 class="panel-title">{{ post.title }}</h3>
+						<span class="panel-date">{{ post.date | date: "%-d/%-m/%y" }}</span>
 					</div>
-				</a>
-
-				<a href="#" target="_blank">
-					<div id="shell" class="panel centered invisible">
-						<div class="panel-overlay panel-content">
-							<div class="blog-header">
-								<h4>Shell</h4>
-								<span class="blog-date">00.00.00</span>
-							</div>
-							<div class="blog-description">
-								<p>
-									<em>What on shell are you sudoing about?!</em>
-								</p>
-								<p class="invisible">
-									Coming soon...
-								</p>
-							</div>
-						</div>
+					<div class="panel-description">
+						<p>{{ post.description }}</p>
 					</div>
-				</a>
-
-				<a href="#" target="_blank">
-					<div id="shell" class="panel centered invisible">
-						<div class="panel-overlay panel-content">
-							<div class="blog-header">
-								<h4>JS Black Magix</h4>
-								<span class="blog-date">00.00.00</span>
-							</div>
-							<div class="blog-description">
-								<p>
-									Expecting something to break, but it works... =/
-								</p>
-								<p class="invisible">
-									Coming soon...
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="#" target="_blank">
-					<div id="shell" class="panel centered invisible">
-						<div class="panel-overlay panel-content">
-							<div class="blog-header">
-								<h4>Google Code Jam</h4>
-								<span class="blog-date">00.00.00</span>
-							</div>
-							<div class="blog-description">
-								<p>
-									Ooo! A cookie...
-								</p>
-								<p class="invisible">
-									Coming soon...
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="#" target="_blank">
-					<div id="shell" class="panel centered invisible">
-						<div class="panel-overlay panel-content">
-							<div class="blog-header">
-								<h4>Ruby on Rails</h4>
-								<span class="blog-date">00.00.00</span>
-							</div>
-							<div class="blog-description">
-								<p>
-									Gems! Gems are fabulous...
-								</p>
-								<p class="invisible">
-									Coming soon...
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<a href="http://philipwalton.com/articles/what-no-one-told-you-about-z-index/" target="_blank">
-					<div id="shell" class="panel centered invisible">
-						<div class="panel-overlay panel-content">
-							<div class="blog-header">
-								<h4>Z-Index</h4>
-								<span class="blog-date">00.00.00</span>
-							</div>
-							<div class="blog-description">
-								<p>
-									Now you see me, now you still <em>do</em>...eh...oops...
-								</p>
-								<p class="invisible">
-									Coming soon...
-								</p>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<div class="h64"></div>
-			</div> <!-- main-content container -->
-		
-		{% include footer_bowtie.html %}
+				</div>
+			</div>
+		</a>
+	{% endfor %}
+	<div class="h64"></div>
+</div> <!-- container content -->
+{% include footer_bowtie.html %}

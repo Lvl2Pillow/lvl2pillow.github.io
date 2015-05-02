@@ -6,11 +6,11 @@ $(document).ready(function() {
 	var threshold = 80;
 
 	// threshold changes for mobile
-	if ($(window).width() <= 640)
+	if ($(window).width() <= 480)
 		threshold = 40;
 
 	$(window).resize(function() {
-		if ($(window).width() <= 640)
+		if ($(window).width() <= 480)
 			threshold = 40;
 	});
 
@@ -19,7 +19,10 @@ $(document).ready(function() {
 		var topOfObject = $(this).offset().top;
 		var bottomOfWindow = $(window).scrollTop()+$(window).height();
 		if (bottomOfWindow > topOfObject+threshold) {
-			$(this).css("opacity", 1);
+			$(this).addClass("visible").delay(2000).queue(function() {
+				$(this).removeClass("invisible");
+				$(this).removeClass("visible");
+			});
 		}
 	});
 
@@ -30,7 +33,10 @@ $(document).ready(function() {
 			var topOfObject = $(this).offset().top;
 			var bottomOfWindow = $(window).scrollTop()+$(window).height();
 			if (bottomOfWindow > topOfObject+threshold) {
-				$(this).css("opacity", 1);
+				$(this).addClass("visible").delay(2000).queue(function() {
+					$(this).removeClass("invisible");
+					$(this).removeClass("visible");
+				});
 			}
 		});
 	});

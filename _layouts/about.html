@@ -1,194 +1,182 @@
-					{% include head.html %}
-					{% include header.html %}
+{% include head.html %}
+{% include header.html %}
+<!-- Main content -->
+<div class="container content">
+	<div class="about-wrapper">
+		<div class="profile-picture"></div>
+		<div class="about-description">
+			<h2>Greetings,</h2>
+			<p>I'm Henry. <span class="noscript">I'm a <span class="typed-string"></span></span></p>
+			<p class="quote">
+				Bachelor of Information Technology</br>
+				Computer Science</br>
+				Class I Honours - Distinction WAM
+			</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<script>
+		$(".typed-string").typed({
+			strings: ["^800.^100.^100.", "^400Computer Scientist^150.", "^400Problem Solver^150.", "^400Gamer^500 :D", "^400Geek^600 ;P"],
+			typeSpeed: 120,
+			backSpeed: 80,
+			backDelay: 800,
+			loop: true
+		});
+	</script>
+	<div class="h64"></div>
+	<div class="divider--horizontal"></div>
+	<div class="h64"></div>
+	<!-- Tiles -->
+	<div class="masonry-container">
+		<div id="prospection" class="panel center--horizontal invisible">
+			<div class="panel-content">
+				<div class="panel-ribbon"></div>
+				<h3 class="panel-title">Prospection</h3>
+				<p class="quote">
+					Web Developer &amp; Tester</br>
+					March 2015 - Present
+				</p>
+				<p>
+					Prospection offers services and analytics to the pharmaceutical industry. We build tools and dashboards using web technologies, that enables rapid visualisations of large amounts of data, which are then used to steer marketing strategies. This opportunity has helped me develop my communication and teamwork skills as well as my technical skills.
+				</p>
+				<p><a href="http://www.prospection.com.au/" target="_blank">Prospection Website</a></p>
+				<p>
+					<span class="tag java">Java</span>
+					<span class="tag play">Play Framework</span>
+					<span class="tag html5">HTML5</span>
+					<span class="tag css">CSS</span>
+					<span class="tag js">JavaScript</span>
+					<span class="tag jquery">JQuery</span>
+					<span class="tag sql">SQL</span>
+					<span class="tag jira">JIRA</span>
+					<span class="tag bit">Bitbucket</span>
+				</p>
+			</div>
+		</div>
 
-				<!-- Main content -->
-				<div class="main-content container">
-					<div class="about-wrapper">
-						
-						<div class="profile-picture"></div>
+		<div id="info1003" class="panel center--horizontal invisible">
+			<div class="panel-content">
+				<div class="panel-ribbon"></div>
+				<h3 class="panel-title">INFO1003: Foundations to IT</h3>
+				<p class="quote">
+					Tutor</br>
+					March 2105 - Present
+				</p>
+				<p>
+					Helping students learn various information technologies - from HTML5 to JavaScript to Excel. This opportunity enhanced my skills in planning, communicating, and teaching. Above all, this experience has been most enjoyable and rewarding.
+				</p>
+				<p>
+					<span class="tag html5">HTML5</span>
+					<span class="tag css">CSS</span>
+					<span class="tag js">JavaScript</span>
+					<span class="tag excel">Excel</span>
+					<span class="tag tutor">Tutor</span>
+				</p>
+			</div>
+		</div>
 
+		<div id="usyd" class="panel center--horizontal invisible">
+			<div class="panel-content">
+				<div class="panel-ribbon"></div>
+				<h3 class="panel-title">CARE: CAusality REasoning</h3>
+				<p class="quote">
+					Author</br>
+					Dec 2013 - Nov 2014
+				</p>
+				<p>
+					As part of my Honours thesis, I improved an existing algorithm for causality reasoning. These improvements led to a greater accuracy, and a deterministic solution that was not possible before. In addition, I created a framework (CARE) that implemented the algorithm and enabled users to perform causality reasoning on high-dimensionality datasets. I am currently writing a paper on my research, which I intend to publish.
+				</p>
+				<p>
+					<span class="tag python">Python</span>
+					<span class="tag networkx">NetworkX</span>
+					<span class="tag boom">Boolean Minimization</span>
+					<span class="tag stats">Statistics</span>
+					<span class="tag java">Java</span>
+				</p>
+			</div>
+		</div>
 
-						<div class="inline-block about-description">
-							<h2>Greetings,</h2>
-							<p>
-								I'm Henry. <span class="noscript">I'm a <em><span class="typed-string"></span></em></span>
-							</p>
-							<p class="subtitle">
-								BIT (Honours) - major in Computer Science.
-								</br>
-								Distinction WAM and First Class Honours.
-							</p>
-						</div>
-						
-					</div>
-					<div style="clear:both;"></div>
-					
+		<div id="usyd" class="panel center--horizontal invisible">
+			<div class="panel-content">
+				<div class="panel-ribbon"></div>
+				<h3 class="panel-title">Sydney Student Talent</h3>
+				<p class="quote">
+					Data Analyst</br>
+					Nov, 2014 - June, 2015
+				</p>
+				<p>
+					I worked with the Sydney Student Talent in developing a new administration system for university students. This job enriched my Python scripting, SQL, Excel and VBA skills. Additionally, I acquired many valuable experiences in working with a team on a large-scale project. 
+				</p>
+				<p><a href="https://sydneystudent.sydney.edu.au/sitsvision/wrd/siw_lgn" target="_blank">USYD Login Page</a></p>
+				<p>
+					<span class="tag sql">SQL</span>
+					<span class="tag python">Python</span>
+					<span class="tag excel">Excel</span>
+					<span class="tag vba">VBA</span>
+					<span class="tag regex">Regex</span>
+					<span class="tag jira">JIRA</span>
+				</p>
+			</div>
+		</div>
 
-					<div class="h64"></div>
-					<div class="divider"></div>
-					<div class="h64"></div>
-					<!-- Tiles -->
-					<div class="masonry-container">
-						<div id="prospection" class="panel centered invisible">
-							<div class="panel-overlay panel-content">
-								<div class="panel-ribbon"></div>
-								<div class="panel-header">
-									<h4 class="panel-title">Prospection</h4>
-									<p class="panel-subtitle">Web Developer &amp; Tester</p>
-									<p class="panel-date">March 2015 - Present</p>
-								</div>
-								<div class="panel-body">
-									<p>
-										Prospection offers services and analytics to the pharmaceutical industry. We build tools and dashboards that enables rapid visualisations of large amounts of data, which are used to steer marketing strategies.
-									</p>
-									<p>
-										<a href="http://www.prospection.com.au/" target="_blank">Prospection Website</a>
-									</p>
-									<p>
-										<span class="tag java">Java</span>
-										<span class="tag play">Play Framework</span>
-										<span class="tag html5">HTML5</span>
-										<span class="tag css">CSS</span>
-										<span class="tag js">JavaScript</span>
-										<span class="tag jquery">JQuery</span>
-										<span class="tag sql">SQL</span>
-										<span class="tag jira">JIRA</span>
-										<span class="tag bit">Bitbucket</span>
-									</p>
-								</div>
-							</div>
-						</div>
+		<div id="neo4j" class="panel center--horizontal invisible">
+			<div class="panel-content">
+				<div class="panel-ribbon"></div>
+				<h3 class="panel-title">COMP5338: Data Models</h3>
+				<p class="quote">
+					Developer &amp; System Architect</br>
+					Mar 2014 - Jun 2014
+				</p>
+				<p>
+					As a group of three, we designed and implemented a NoSQL system that could efficiently execute common queries from an online music website. We used technologies including MongoDB and Neo4j.
+				</p>
+				<p>
+					<span class="tag java">Java</span>
+					<span class="tag nosql">NoSQL</span>
+					<span class="tag neo4j">Neo4j</span>
+					<span class="tag mongo">MongoDB</span>
+					<span class="tag sys-design">System Design</span>
+					<span class="tag polygot">Polygot Persistence</span>
+				</p>
+			</div>
+		</div>
 
-						<div id="usyd" class="panel centered invisible">
-							<div class="panel-overlay panel-content">
-								<div class="panel-ribbon"></div>
-								<div class="panel-header">
-									<h4 class="panel-title">INFO1003: Foundations to IT</h4>
-									<p class="panel-subtitle">Tutor</p>
-									<p class="panel-date">March 2105 - Present</p>
-								</div>
-								<div class="panel-body">
-									<p>
-										Helping students learn various information technologies - from HTML5 to JavaScript to Excel. This opportunity enhanced my skills in planning, communicating, and teaching. Above all, this experience has been most enjoyable and rewarding.
-									</p>
-									<p>
-										<span class="tag html5">HTML5</span>
-										<span class="tag css">CSS</span>
-										<span class="tag js">JavaScript</span>
-										<span class="tag excel">Excel</span>
-										<span class="tag tutor">Tutor</span>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div id="usyd" class="panel centered invisible">
-							<div class="panel-overlay panel-content">
-								<div class="panel-ribbon"></div>
-								<div class="panel-header">
-									<h4 class="panel-title">CARE: CAusality REasoning</h4>
-									<p class="panel-subtitle">Author</p>
-									<p class="panel-date">Dec 2013 - Nov 2014</p>
-								</div>
-								<div class="panel-body">
-									<p>
-										As part of my Honours thesis, I improved an existing algorithm for causality reasoning. These improvements led to a greater accuracy, and a deterministic solution that was not possible before. In addition, I created a framework (CARE) that implemented the algorithm and enabled users to perform causality reasoning on high-dimensionality datasets. I am currently writing a paper on my research, which I intend to publish.
-									</p>
-									<p>
-										<span class="tag python">Python</span>
-										<span class="tag networkx">NetworkX</span>
-										<span class="tag boom">Boolean Minimization</span>
-										<span class="tag stats">Statistics</span>
-										<span class="tag java">Java</span>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div id="usyd" class="panel centered invisible">
-							<div class="panel-overlay panel-content">
-								<div class="panel-ribbon"></div>
-								<div class="panel-header">
-									<h4 class="panel-title">Sydney Student Talent</h4>
-									<p class="panel-subtitle">Data Analyst</p>
-									<p class="panel-date">Nov, 2014 - June, 2015</p>
-								</div>
-								<div class="panel-body">
-									<p>
-										I worked with the Sydney Student Talent in developing a new administration system for university students. This job enriched my Python scripting, SQL, Excel and VBA skills. Additionally, I acquired many valuable experiences in working with a team on a large-scale project. 
-									</p>
-									<p>
-										<a href="https://sydneystudent.sydney.edu.au/sitsvision/wrd/siw_lgn" target="_blank">USYD Login Page</a>
-									</p>
-									<p>
-										<span class="tag sql">SQL</span>
-										<span class="tag python">Python</span>
-										<span class="tag excel">Excel</span>
-										<span class="tag vba">VBA</span>
-										<span class="tag regex">Regex</span>
-										<span class="tag jira">JIRA</span>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div id="neo4j" class="panel centered invisible">
-							<div class="panel-overlay panel-content">
-								<div class="panel-ribbon"></div>
-								<div class="panel-header">
-									<h4 class="panel-title">COMP5338: Data Models</h4>
-									<p class="panel-subtitle">Developer &amp; System Architect</p>
-									<p class="panel-date">Mar 2014 - Jun 2014</p>
-								</div>
-								<div class="panel-body">
-									<p>
-										As a group of three, we designed and implemented a NoSQL system that could efficiently execute common queries from an online music website. We used technologies including MongoDB and Neo4j.
-									</p>
-									<p>
-										<span class="tag java">Java</span>
-										<span class="tag nosql">NoSQL</span>
-										<span class="tag neo4j">Neo4j</span>
-										<span class="tag mongo">MongoDB</span>
-										<span class="tag sys-design">System Design</span>
-										<span class="tag polygot">Polygot Persistence</span>
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div id="heroku" class="panel centered invisible">
-							<div class="panel-overlay panel-content">
-								<div class="panel-ribbon"></div>
-								<div class="panel-header">
-									<h4 class="panel-title">ELEC3609: Internet Software Platforms</h4>
-									<p class="panel-subtitle">Team Leader &amp; Designer</p>
-									<p class="panel-date">Jul 2013 - Nov 2013</p>
-								</div>
-								<div class="panel-body">
-									<p>
-										Together with a team of five, we created a web application, USYD Connect, using Ruby on Rails, HTML5, Javascript, JQuery, and CSS. The web application was deployed with Heroku with Postgres as our database. The web application provided services for students to communicate with each other, similar to a forum. I was team leader and designer for this project.
-									</p>
-									<p>
-										<a class="button" href="http://usydconnect.herokuapp.com/" target="_blank">USYD Connect</a>
-									</p>
-									<p>
-										<span class="tag ruby">Ruby</span>
-										<span class="tag rails">Ruby on Rails</span>
-										<span class="tag postgres">Postgres</span>
-										<span class="tag sql">SQL</span>
-										<span class="tag html">HTML</span>
-										<span class="tag css">CSS</span>
-										<span class="tag js">JavaScript</span>
-										<span class="tag git">GitHub</span>
-										<span class="tag roku">Heroku</span>
-										<span class="tag team">Team Management</span>
-									</p>
-								</div>
-							</div>
-						</div>
-
-				</div> <!-- masonry-container -->
-				<div class="h64"></div>
-		</div> <!-- main-content container -->
-		
-		{% include footer.html %}
+		<div id="heroku" class="panel center--horizontal invisible">
+			<div class="panel-content">
+				<div class="panel-ribbon"></div>
+				<h3 class="panel-title">ELEC3609: Internet Software Platforms</h3>
+				<p class="quote">
+					Team Leader &amp; Designer</br>
+					Jul 2013 - Nov 2013
+				</p>
+				<p>
+					Together with a team of five, we created a web application, USYD Connect, using Ruby on Rails, HTML5, Javascript, JQuery, and CSS. The web application was deployed with Heroku with Postgres as our database. The web application provided services for students to communicate with each other, similar to a forum. I was team leader and designer for this project.
+				</p>
+				<p><a class="button" href="http://usydconnect.herokuapp.com/" target="_blank">USYD Connect</a></p>
+				<p>
+					<span class="tag ruby">Ruby</span>
+					<span class="tag rails">Ruby on Rails</span>
+					<span class="tag postgres">Postgres</span>
+					<span class="tag sql">SQL</span>
+					<span class="tag html">HTML</span>
+					<span class="tag css">CSS</span>
+					<span class="tag js">JavaScript</span>
+					<span class="tag git">GitHub</span>
+					<span class="tag roku">Heroku</span>
+					<span class="tag team">Team Management</span>
+				</p>
+			</div>
+		</div>
+	</div> <!-- masonry-container -->
+	<script>
+		var container = document.querySelector(".masonry-container");
+		new Masonry(container , {
+			columnWidth: 2,
+			isFitWidth: true,
+			itemSelector: ".masonry-container .panel"
+		});
+	</script>
+	<div class="h64"></div>
+</div> <!-- main-content container -->
+{% include footer.html %}

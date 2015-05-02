@@ -2,35 +2,33 @@
 		<div class="fill-height">
 			<!-- Javascript disabled -->
 			<noscript>
-				<p class="banner-top warning">Please enable JavaScript to view this page properly.</p>
+				<div class="banner--top warning">Please enable JavaScript to view this page properly.</div>
 			</noscript>
 			<!-- Header -->
 			<header>
-				<nav class="navbar">
-					<div class="container">
-						<!-- brand logo -->
-						<a class="navbar-logo" href="{{ site.baseurl }}/about.html" title="ZZ">
-							<object id="zz" data="{{ site.baseurl }}/assets/images/zz.svg" type="image/svg+xml">
-								<img src="{{ site.baseurl }}/assets/images/zz.png"/>
-							</object>
-						</a>
-						<!-- nav links -->
-						<div class="navbar-links">
-							<span class="navbar-arrow" href="#"><i class="fa fa-bars fa-2x"></i></span>
-							<ul class="dropdown">
-								{% assign current = page.url | downcase %}
-								<li {% if current == "/about.html" %}class="active"{% endif %}>
-									<a href="{{ site.baseurl }}/about.html" title="About"><h3>About</h3></a>
-								</li>
-								<!-- Note: naming of urls is important! -->
-								<li {% if current == "/blogs.html" or current contains "/blogs/" %}class="active"{% endif %}>
-									<a href="{{ site.baseurl }}/blogs.html" title="Blogs"><h3>Blogs</h3></i></a>
-								</li>
-								<li {% if current == "/contact.html" %}class="active"{% endif %}>
-									<a href="{{ site.baseurl }}/contact.html" title="Contact"><h3>Contact</h3></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+				<div class="container">
+					<!-- logo -->
+					<a class="logo" href="{{ site.baseurl }}/about.html" title="ZZ">
+						<object type="image/svg+xml" data="{{ site.baseurl }}/assets/images/zz.svg">
+							<img src="{{ site.baseurl }}/assets/images/zz.png"/>
+						</object>
+					</a>
+					<!-- nav links -->
+					<nav>
+						<i class="fa fa-bars fa-2x dropdown-button"></i>
+						<ul class="dropdown">
+							{% assign current = page.url | downcase %}
+							<a href="{{ site.baseurl }}/about.html" title="About">
+								<li {% if current == "/about.html" %}class="active-tab"{% endif %}>About</li>
+							</a>
+							<a href="{{ site.baseurl }}/blogs.html" title="Blogs">
+								<li {% if current == "/blogs.html" or current contains "/blogs/" %}class="active-tab"{% endif %}>Blogs</i></li>
+							</a>
+							<a href="{{ site.baseurl }}/contact.html" title="Contact">
+								<li {% if current == "/contact.html" %}class="active-tab"{% endif %}>Contact</li>
+							</a>
+						</ul>
+					</nav>
+				</div>
 			</header>
+			<script src="{{ site.baseurl }}/assets/javascripts/dropdown.js"></script>

@@ -1,22 +1,16 @@
-
-
-</div> <!-- fill-height -->
-
-		<!-- Footer -->
-		<footer class="footer">
+		</div> <!-- fill-height -->
+		<footer>
 			<div class="container">
-				<div class="divider"></div>
-				<div class="h24"></div>
-				<div class="text-center">
-					A fancy <i id="bowtie" class="icon ion-bowtie"></i> ...
-				</div>
+				<div class="divider--horizontal"></div>
+				<div class="h32"></div>
+				A fancy <i id="bowtie" class="icon ion-bowtie"></i> ...
 			</div>
 		</footer>
-
-		
-
-
-		<script type="text/javascript">
+		<!-- Additional JS -->
+		{% for js_path in page.more_end_js %}
+		<script src="{{ site.baseurl }}/{{ js_path }}"></script>
+		{% endfor %}
+		<script>
 			//<![CDATA[
 			<!--
 			var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
@@ -43,10 +37,5 @@
 			//-->
 			//]]>
 		</script>
-
-		<!-- Additional JS -->
-		{% for js_path in page.more_end_js %}
-		<script src="{{ site.baseurl }}/{{ js_path }}"></script>
-		{% endfor %}
 	</body>
 </html>

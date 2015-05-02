@@ -1,0 +1,55 @@
+/*----------------------------------------------------------------------------
+JavaScript disabled
+----------------------------------------------------------------------------*/
+
+.banner--top {
+	width: 100%;
+	top: 0;
+	text-align: center;
+}
+
+.warning {
+	color: red;
+}
+
+.noscript {
+	display: none;
+}
+
+.invisible {
+	opacity: 1;
+}
+
+nav {
+	/* removing this causes nav to appear on new line */
+	float: right;
+}
+
+nav a {
+	font-size: 18px;
+}
+
+@media all and (max-width: 480px) {
+	i.dropdown-button {
+		display: none;
+	}
+
+	.dropdown {
+		width: auto;
+		position: static;
+		top: auto;
+		left: auto;
+		right: auto;
+	}
+
+	nav > ul > a > li {
+		padding: 0 2px;
+		display: inline-block;
+		text-align: left;
+		background-color: transparent;
+	}
+}
+
+.active-tab {
+	background-color: #F0F0F0;
+}
