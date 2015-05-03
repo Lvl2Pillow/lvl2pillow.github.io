@@ -24,11 +24,9 @@
 		
 		<script src="/assets/typed/typed.min.js"></script>
 		
-		<script src="/assets/masonry/masonry.pkgd.min.js"></script>
-		
 		<script src="/assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
 		
-		<script src="/assets/javascripts/fadein.js"></script>
+		<script src="/assets/masonry/masonry.pkgd.min.js"></script>
 		
 	</head>
 
@@ -81,15 +79,6 @@
 		</div>
 	</div>
 	<div class="clear"></div>
-	<script>
-		$(".typed-string").typed({
-			strings: ["^800.^100.^100.", "^400Computer Scientist^150.", "^400Problem Solver^150.", "^400Gamer^500 :D", "^400Geek^600 ;P"],
-			typeSpeed: 120,
-			backSpeed: 80,
-			backDelay: 800,
-			loop: true
-		});
-	</script>
 	<div class="h64"></div>
 	<div class="divider--horizontal"></div>
 	<div class="h64"></div>
@@ -235,16 +224,6 @@
 			</div>
 		</div>
 	</div> <!-- masonry-container -->
-	<script>
-		var $container = $(".masonry-container");
-		$container.imagesLoaded(function() {
-			$container.masonry({
-				itemSelector: ".masonry-container .panel",
-				columnWidth: 2,
-				isFitWidth: true
-			});
-		});
-	</script>
 	<div class="h64"></div>
 </div> <!-- container content -->
 		</div> <!-- fill-height -->
@@ -257,6 +236,10 @@
 			</div>
 		</footer>
 		<!-- Additional JS -->
+		
+		<script src="/assets/javascripts/about.js"></script>
+		
+		<script src="/assets/javascripts/fadein.js"></script>
 		
 	</body>
 </html>
