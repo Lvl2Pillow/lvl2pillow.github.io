@@ -2,7 +2,7 @@
 Fade in elements on scroll
 ----------------------------------------------------------------------------*/
 
-window.onload = function(e) {
+$(document).ready(function() {
 	var threshold = 80;
 
 	// threshold changes for mobile
@@ -40,4 +40,4 @@ window.onload = function(e) {
 			}
 		});
 	});
-};
+});

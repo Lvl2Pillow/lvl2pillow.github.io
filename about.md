@@ -7,5 +7,4 @@ more_js:
   - "assets/masonry/masonry.pkgd.min.js"
 more_end_js:
   - "assets/javascripts/about.js"
-  - "assets/javascripts/fadein.js"
 ---
