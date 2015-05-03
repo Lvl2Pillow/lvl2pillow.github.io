@@ -24,12 +24,14 @@ $(document).ready(function() {
 			$(".dropdown").slideUp();
 	});
 	$("nav").click(function(e) {
-		e.stopPropagation();
-		var $dropdown = $(".dropdown");
-		// toggle
-		if ($dropdown.is(":visible"))
-			$dropdown.slideUp(); 
-		else
-			$dropdown.slideDown(); 
+		if ($(window).width() <= 480) {
+			e.stopPropagation();
+			var $dropdown = $(".dropdown");
+			// toggle
+			if ($dropdown.is(":visible"))
+				$dropdown.slideUp();
+			else
+				$dropdown.slideDown();
+		}
 	});
 });
