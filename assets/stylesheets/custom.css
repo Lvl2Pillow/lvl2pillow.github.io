@@ -519,6 +519,12 @@ About
 	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.25);
 }
 
+@media all and (max-width: 1024px) {
+	.about-wrapper {
+		text-align: center;
+	}
+}
+
 @media all and (max-width: 480px) {
 	.about-wrapper {
 		text-align: center;
