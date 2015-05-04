@@ -7,17 +7,17 @@ $(".typed-string").typed({
 	loop: true
 });
 /* Masonry script */
-var container = document.querySelector('.masonry-container');
-var msnry = new Masonry(container, {
-				itemSelector: ".panel--masonry",
-				columnWidth: 2,
-				isFitWidth: true
-			});
-imagesLoaded(container, function() {
-	msnry.layout();
+var $container = $(".masonry-container");
+$container.imagesLoaded(function() {
+	$container.masonry({
+		itemSelector: ".panel--masonry",
+		columnWidth: 2,
+		isFitWidth: true
+	});
 });
+
 /* Onload fadein */
-window.onload = function(e) {
+$(window).load(function(e) {
 	var threshold = 80;
 
 	// threshold changes for mobile
@@ -55,4 +55,4 @@ window.onload = function(e) {
 			}
 		});
 	});
-};
+});
