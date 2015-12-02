@@ -9,6 +9,9 @@ My website and blog.
 
 ##Update:
 
+####02/12/15
+_Yawnnnnnnn_ It's been a long while since I updated this... (more coming soon ;D)
+
 ####01/05/15
 - Jekyll
 
