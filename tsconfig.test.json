@@ -11,7 +11,9 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vitest/globals", "@testing-library/jest-dom", "vite/client", "@testing-library/react"]
+    "types": ["vitest/globals", "@testing-library/jest-dom", "vite/client", "@testing-library/react"],
+    "skipLibCheck": true,
+    "esModuleInterop": true
   },
   "include": ["src/**/*.test.ts", "src/**/*.test.tsx"]
 }
