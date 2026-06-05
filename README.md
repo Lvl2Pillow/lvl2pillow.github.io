@@ -45,3 +45,4 @@ The following commands are available in the project:
 - `npm run preview`: Previews the production build locally.
 - `npm run test`: Runs the test suite using Vitest.
 - `npm run coverage`: Runs tests with coverage report.
+- `npm run check`: Runs type checking, linting, and tests to verify project health.
